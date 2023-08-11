@@ -1,0 +1,56 @@
+.tools_section {
+  margin: 2rem;
+  padding: 2rem 1rem;
+}
+
+.section_section_card_container {
+  border: 0.1px solid var(--border-color);
+}
+
+.tools_section .tools_section_card_container {
+  display: block;
+}
+
+.tool_card {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.tools_section div h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white-color);
+  white-space: nowrap;
+}
+
+.tool_icon{
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--blue-color);
+  margin: 0 1rem;
+}
+
+.first_icon {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--blue-color);
+  margin: 0 1rem;
+}
+
+@media (min-width: 700px) {
+  .tools_section {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .tools_section_card_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .first_icon {
+    display: none;
+  }
+}

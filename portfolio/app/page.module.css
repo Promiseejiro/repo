@@ -1,0 +1,14 @@
+.main_container {
+  padding-bottom: 2rem;
+  background-color: var(--dark-color);
+  width: 100%;
+}
+
+.white {
+  background-color: white;
+}
+
+.projects {
+  margin: 2rem;
+  padding: 1rem;
+}

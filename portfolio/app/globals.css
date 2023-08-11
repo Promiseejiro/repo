@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-color: #101010;  
+  --blue-color: #0072ef; 
+  --gray-color: #d0d2d2;
+  --gray-background:#222222;
+  --white-color: #fff;
+  --border-color:rgba(208,210,210,.5);
+  --overlay-color:rgba(16,16,16,.8);
+}
+
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}

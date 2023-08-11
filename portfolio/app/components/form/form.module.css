@@ -1,0 +1,52 @@
+.form {
+  margin: 2rem 2rem 5rem 2rem;
+  padding: 2rem 0;
+}
+
+.form form {
+  border: 0.1px solid var(--border-color);
+}
+
+.form .form_controller {
+  margin: 2rem;
+}
+
+.form_controller input {
+  display: block;
+  width: 100%;
+  outline: none;
+  border-bottom: 0.5px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  background-color: transparent;
+}
+
+.form_controller textarea {
+  display: block;
+  width: 100%;
+  outline: none;
+  border-bottom: 0.5px solid var(--border-color);
+  padding: 0.5rem 0 1rem 0;
+  background-color: transparent;
+  height: 7rem;
+}
+
+.form_controller input:placeholder {
+  color: var(--gray-color);
+}
+
+.form .form_controller .submit {
+  display: inline-block;
+  border: 2px solid var(--blue-color);
+  color: var(--blue-color);
+  font-weight: 500;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  margin: auto;
+}
+
+@media (min-width: 700px) {
+  .form {
+    max-width: 800px;
+    margin: auto;
+  }
+}

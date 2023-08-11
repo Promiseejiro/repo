@@ -1,0 +1,47 @@
+.expirence_section {
+     margin: 2rem;
+   }
+   
+   .experience_main_container {
+     display: block;
+   }
+   
+   .expirence_section .card {
+     margin: 3rem 0;
+     border: 0.1px solid var(--border-color);
+     padding: 2rem 1rem;
+   }
+   
+   .expirence_section .card h4 {
+     color: var(--white-color);
+     font-size: 18px;
+     font-weight: 500;
+     margin: 0.5rem 0;
+   }
+   
+   .expirence_section .card h6 {
+     color: var(--gray-color);
+   }
+   
+   .expirence_section .card p {
+     color: var(--gray-color);
+   }
+   
+   .expirence_section .card span {
+     color: var(--blue-color);
+     font-weight: 500;
+     font-size: 12px;
+   }
+   
+   @media (min-width: 700px) {
+     .expirence_section {
+       max-width: 800px;
+       margin: auto;
+     }
+   
+     .experience_main_container {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+     }
+   }
+   

@@ -1,0 +1,16 @@
+.contact_container{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.contact_icons{
+  color:var(--gray-color);
+  font-size: 18px;
+  margin:.7rem 0;
+}

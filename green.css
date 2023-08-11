@@ -1,0 +1,13 @@
+ :root{
+  --mainColor : #17a454;
+  --secondaryColor: #17a454;
+  --borderColor : #c1c1c1;
+  --mainText : black;
+  --secondaryText : #edeead;
+  --themeDotColor:#fff;
+  --previewColor:rgba(252,249,244,.3);
+  --previewShadow:rgb(230, 217, 181);
+  --darkColor: black;
+    --inputColor:#f4f4f4;
+    --secondaryTextColor: black;
+}
