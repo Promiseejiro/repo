@@ -18,7 +18,6 @@ import Contact from "./components/contact/contact";
 import Form from "./components/form/form";
 //css
 import classes from "./page.module.css";
-import "./page.module.css"
 
 import { Poppins } from "next/font/google";
 
@@ -31,7 +30,7 @@ export default function Home() {
   let { theme } = useContext(ThemeContext);
   return (
     <div>
-        <div className={`${classes.main_container}   ${poppins.className} ${theme}  `}>
+        <div className={`${classes.main_container}   ${poppins.className}  ${theme ==="white" && classes.white}`}>
           <div>
             <Navbar />
           </div>

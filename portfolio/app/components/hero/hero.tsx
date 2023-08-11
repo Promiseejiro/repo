@@ -1,5 +1,5 @@
-import { useRef, useEffect, useState } from "react";
-
+import { useRef, useEffect, useState,useContext } from "react";
+import { ThemeContext } from "../../../context/themecontext";
 import Link from "next/link";
 
 import classes from "./hero.module.css";
@@ -9,6 +9,8 @@ interface heightProps {
   height: String;
 }
 const Hero = () => {
+  let { theme } = useContext(ThemeContext);
+  
   const [height, setHeight] = useState<heightProps>();
    useEffect(() => {
   //   if (sliderRef.current) {
@@ -21,8 +23,8 @@ const Hero = () => {
 
   const sliderRef = useRef();
   return (
-    <div>
-      <div className={classes.hero_section}id='home'>
+    <div className={`${theme==="white" && classes.white_theme}`}>
+      <div className={`${classes.hero_section}`} id='home'>
         <div className={classes.hero_overlay}>
           <h1></h1>
           <div className={classes.hero_section_head} style={{height:`${height}px`}}>
@@ -43,7 +45,7 @@ const Hero = () => {
           <div>
             <img
               className={classes.detailes_image}
-              src="https://res.cloudinary.com/dxqg5hify/image/upload/v1691327439/image-1__1_-removebg-preview_1691310334102-removebg-preview_wxcx6d.png"
+              src="https://res.cloudinary.com/dxqg5hify/image/upload/v1691739399/promise.18621d9b26d477ddd12c_1690311930751-removebg-preview_1_jedflt.png"
             />
           </div>
 

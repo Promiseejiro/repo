@@ -1,3 +1,5 @@
+import {useContext} from "react"
+import { ThemeContext } from "../../../context/themecontext";
 import classes from "./subHeading.module.css";
 
 interface SubHeaderprops {
@@ -5,7 +7,9 @@ interface SubHeaderprops {
 }
 
 const SubHeader = ({label}:SubHeaderprops) => {
-  return <h3 className={classes.sub_heading}>{label}</h3>
+  let { theme } = useContext(ThemeContext);
+  
+  return <h3 className={`${classes.sub_heading} ${theme ==="white" && classes.white_theme}`}>{label}</h3>
 };
 
 export default SubHeader;

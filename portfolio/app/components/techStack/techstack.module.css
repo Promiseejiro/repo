@@ -1,10 +1,14 @@
 .tools_section {
   margin: 2rem;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
 }
 
-.section_section_card_container {
+.section_card_container {
   border: 0.1px solid var(--border-color);
+}
+
+.white_theme .section_card_container{
+  border: .1px solid var(--dark-color);
 }
 
 .tools_section .tools_section_card_container {
@@ -24,6 +28,10 @@
   white-space: nowrap;
 }
 
+.white_theme div h4{
+  color:var(--dark-color);
+}
+
 .tool_icon{
   font-size: 25px;
   font-weight: 500;
@@ -31,11 +39,19 @@
   margin: 0 1rem;
 }
 
+.white_theme .tool_icon{
+  color:var(--success-color);
+}
+
 .first_icon {
   font-size: 25px;
   font-weight: 500;
   color: var(--blue-color);
   margin: 0 1rem;
+}
+
+.white_theme .first_icon{
+  color:var(--success-color);
 }
 
 @media (min-width: 700px) {

@@ -19,18 +19,34 @@
      margin: 0.5rem 0;
    }
    
+   .white_theme .card h4{
+     color:var(--dark-color);
+   }
+   
    .expirence_section .card h6 {
      color: var(--gray-color);
+   }
+   
+   .white_theme .card h6{
+     color:var(--dark-color);
    }
    
    .expirence_section .card p {
      color: var(--gray-color);
    }
    
+   .white_theme .card p{
+     color:var(--dark-color);
+   }
+   
    .expirence_section .card span {
      color: var(--blue-color);
      font-weight: 500;
      font-size: 12px;
+   }
+   
+   .white_theme .card span{
+     color:var(--success-color);
    }
    
    @media (min-width: 700px) {

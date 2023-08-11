@@ -16,11 +16,11 @@ const Contacts =()=>{
       icon:<BiLogoLinkedin className={classes.contact_icons}/>
     },
     {
-      link:"he",
+      link:"https://www.facebook.com/promise.emosivbe.98?mibextid=ZbWKwL",
       icon:<BiLogoFacebook className={classes.contact_icons}/>
     },
     {
-      link:"hey",
+      link:"https://github.com/",
       icon:<AiFillGithub className={classes.contact_icons}/>
     }
     

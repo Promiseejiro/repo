@@ -1,8 +1,13 @@
+import React,{useContext} from "react";
+import { ThemeContext } from "../../../context/themecontext";
+
 import SubHeader from "../subHeading/subheading";
 //css
 import classes from "./framework.module.css";
 
 const Frameworks = () => {
+  let { theme } = useContext(ThemeContext);
+  
   const frameworks = [
     {
       name: "Material UI",
@@ -18,8 +23,8 @@ const Frameworks = () => {
     },
   ];
   return (
-    <div className={classes.frameworks}>
-      <SubHeader label={`Experience`}></SubHeader>
+    <div className={`${classes.frameworks} ${theme ==="white" && classes.white_theme}`}>
+      <SubHeader label={`Frameworks`}></SubHeader>
       <div className={classes.framework_main_container}>
         {frameworks.map((framework) => (
           <div className={classes.card}>

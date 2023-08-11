@@ -1,10 +1,12 @@
-import React from "react";
+import React,{useContext} from "react";
+import { ThemeContext } from "../../../context/themecontext";
 import classes from "./education.module.css"
 
 //components
 import SubHeader from "../subHeading/subheading";
 
 const Education=()=>{
+  let { theme } = useContext(ThemeContext);
      const qualifications = [
           {
             date: "Sept 2019 - current",
@@ -19,7 +21,7 @@ const Education=()=>{
           },
         ];
 return(
-     <div className={classes.expirence_section}>
+     <div className={`${classes.expirence_section} ${theme === "white" && classes.white_theme}`}>
      <SubHeader label={`Education`}></SubHeader>
      <div className={classes.experience_main_container}> {qualifications.map((experience) => (
        <div className={classes.card}>

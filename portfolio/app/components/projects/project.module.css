@@ -47,6 +47,10 @@
   padding: 0.5rem 0;
 }
 
+.white_theme .card h4{
+  color:var(--dark-color);
+}
+
 .link_container {
   display: flex;
   align-items: center;
@@ -60,7 +64,10 @@
   text-align: center;
   padding: 0.5rem;
   border-bottom: 0.5px solid var(--border-color);
+}
 
+.white_theme .project_btn{
+  color:var(--dark-color);
 }
 
 .active_btn {
@@ -69,6 +76,10 @@
   text-align: center;
   padding: 0.5rem;
   border-bottom: 0.5px solid var(--blue-color);
+}
+
+.white_theme .active_btn {
+  border-bottom: 0.5px solid var(--success-color);
 }
 
 @media (min-width: 600px) {

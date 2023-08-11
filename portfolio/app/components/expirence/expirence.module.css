@@ -23,6 +23,7 @@
   color: var(--gray-color);
 }
 
+
 .expirence_section .card p {
   color: var(--gray-color);
 }
@@ -31,6 +32,15 @@
   color: var(--blue-color);
   font-weight: 500;
   font-size: 12px;
+}
+
+
+.white_theme .card h4, .white_theme .card h6, .white_theme .card p{
+  color:var(--dark-color);
+}
+
+.white_theme .card span{
+  color:var(--success-color);
 }
 
 @media (min-width: 700px) {

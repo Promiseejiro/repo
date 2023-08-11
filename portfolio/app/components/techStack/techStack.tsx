@@ -1,3 +1,6 @@
+import {useContext} from "react";
+import { ThemeContext } from "../../../context/themecontext";
+
 import classes from "./techstack.module.css";
 
 //icons
@@ -7,6 +10,8 @@ import { GoDotFill } from "react-icons/go";
 import SubHeader from "../subHeading/subheading";
 
 const TechStack = () => {
+  let { theme } = useContext(ThemeContext);
+  
   const tools = [
     "Node/Express",
     "JavaScript/Typescript",
@@ -14,9 +19,9 @@ const TechStack = () => {
     "MYSQL/Mongo DB",
   ];
   return (
-    <div className={classes.tools_section}>
+    <div className={`${classes.tools_section} ${theme ==="white" && classes.white_theme}`}>
       <SubHeader label={`Experience`}></SubHeader>
-      <div className={classes.tools_section_card_container}> 
+      <div className={classes.section_card_container}> 
         <div className={classes.tool_card}>
         <GoDotFill className={`${classes.tool_icon} ${classes.first_icon}`}  />
           <h4>Node/Express</h4>

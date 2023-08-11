@@ -1,10 +1,14 @@
+import {useContext} from "react";
+import { ThemeContext } from "../../../context/themecontext";
+
 import SubHeader from "../subHeading/subheading"
 
 import classes from "./languages.module.css"
 
 const Languages=()=>{
+  let { theme } = useContext(ThemeContext);
      return(
-          <div className={classes.languages}>
+          <div className={`${classes.languages} ${theme==="white" && classes.white_theme}`}>
                <SubHeader label={`Experience`}></SubHeader>
           <div className={classes.card}>
             <div className={classes.item1}>

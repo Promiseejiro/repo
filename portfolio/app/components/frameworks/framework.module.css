@@ -25,6 +25,10 @@
   color: var(--white-color);
 }
 
+.white_theme h5,.white_theme p{
+  color:var(--dark-color);
+}
+
 .frameworks .card .progressbar {
   width: 100%;
   height: 3px;
@@ -34,6 +38,10 @@
 .frameworks .card .progressbar .progress {
   height: 100%;
   background-color: var(--blue-color);
+}
+
+.white_theme .card .progressbar .progress{
+  background-color: var(--success-color);
 }
 
 @media (min-width: 700px) {

@@ -5,4 +5,6 @@
      margin: 1rem 0;
    }
 
-   
+   .white_theme{
+     color:var(--dark-color);
+   }

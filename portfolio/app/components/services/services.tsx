@@ -1,8 +1,12 @@
+import {useContext} from "react"
+import { ThemeContext } from "../../../context/themecontext";
+
 import classes from "./services.module.css";
 import { BiCodeAlt } from "react-icons/bi";
 import { MdCall } from "react-icons/md";
 import SubHeader from "../subHeading/subheading";
 const Service = () => {
+  let { theme } = useContext(ThemeContext);
   const services = [
     {
       heading: "Web development",
@@ -17,7 +21,7 @@ const Service = () => {
   ];
 
   return (
-    <div className={classes.services_section}>
+    <div className={`${classes.services_section} ${theme ==="white" && classes.white_theme}`}>
     <SubHeader label='Services'></SubHeader>
       <div className={classes.service_container}>
       <div className={classes.box}>
