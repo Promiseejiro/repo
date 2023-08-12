@@ -1,4 +1,3 @@
-
 import {useContext} from "react"
 import { ThemeContext } from "../../../context/themecontext";
 
@@ -37,7 +36,9 @@ const Contacts =()=>{
   
   
   return (
-   <div className={classes.contact_container}>{links.map((contact)=>(
+   <div className={`${classes.contact_container} ${theme ==="white" && classes.white_theme}
+   ${theme ==="brown" && classes.brown_theme}
+   `}>{links.map((contact)=>(
    <Link href={contact.link}>
      {contact.icon}</Link>
      ))}  </div>

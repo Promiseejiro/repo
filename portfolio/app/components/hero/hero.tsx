@@ -24,9 +24,21 @@ const Hero = () => {
 
   const sliderRef = useRef();
   return (
-    <div className={`${theme==="white" && classes.white_theme}`}>
+    <div className={`${theme==="white" && classes.white_theme} ${theme==="brown" && classes.brown_theme}`}>
       <div className={`${classes.hero_section}`} id='home'>
+      <img src="https://res.cloudinary.com/dxqg5hify/image/upload/v1691739399/promise.18621d9b26d477ddd12c_1690311930751-removebg-preview_1_jedflt.png"/>
         <div className={classes.hero_overlay}>
+        <div className={classes.border_container}>
+              <div className={`${classes.box
+        } ${classes.top_left}`}></div>
+        
+        <div className={`${classes.box
+        } ${classes.top_right}`}></div>
+        <div className={`${classes.box
+        } ${classes.bottom_left}`}></div>
+        <div className={`${classes.box
+        } ${classes.bottom_right}`}></div>
+        
          <div className={classes.theme_container}><Theme></Theme></div>
           <div className={classes.hero_section_head} style={{height:`${height}px`}}>
             <h4>
@@ -37,8 +49,9 @@ const Hero = () => {
             </h4>
           </div>
           <p>
-            Hello! I'm <span>Emosivbe promise</span>, a fullstack web developer
+            Hello! I'm <span>Emosivbe promise</span>, a fullstack web developer<span>.</span>
           </p>
+        </div>
         </div>
       </div>
       <div className={classes.details_container}>
@@ -60,14 +73,14 @@ const Hero = () => {
               <ul className={classes.first_ul}>
                 {mydetails.map((detail) => (
                   <li>
-                    {detail.label}:<span>{detail.value}</span>
+                    {detail.label} : <span>{detail.value}</span>
                   </li>
                 ))}
               </ul>
               <ul className={classes.second_ul}>
                 {mydetails.map((detail) => (
                   <li>
-                    {detail.label}:<span>{detail.value}</span>
+                    {detail.label} : <span>{detail.value}</span>
                   </li>
                 ))}
               </ul>

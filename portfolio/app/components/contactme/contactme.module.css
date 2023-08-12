@@ -14,3 +14,11 @@
   font-size: 18px;
   margin:.7rem 0;
 }
+
+.white_theme .contact_icons{
+  color:var(--dark-color);
+}
+
+.brown_theme .contact_icons{
+  color:var(--dark-color);
+}

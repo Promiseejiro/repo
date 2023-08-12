@@ -12,7 +12,7 @@ const Project = () => {
   return (
     <div className={clasess.card}>
       <div className={clasess.image}>
-        <img src="https://res.cloudinary.com/dxqg5hify/image/upload/v1691327439/image-1__1_-removebg-preview_1691310334102-removebg-preview_wxcx6d.png" />
+        <img src="https://res.cloudinary.com/dxqg5hify/image/upload/v1688078799/xes89qbxpjvylz9kqvdg.jpg" />
         <div className={clasess.overlay}></div>
       </div>
       <h4>Comment section</h4>

@@ -4,8 +4,11 @@
   width: 100%;
 }
 
-.white {
-  background-color: white;
+.white_theme {
+  background-color: var(--white-color);
+}
+.brown_theme {
+  background-color: var(--white-color);
 }
 
 .projects {
