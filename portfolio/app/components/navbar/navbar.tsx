@@ -4,6 +4,8 @@ import Link from "next/link"
 import {FaTimes,FaBars} from "react-icons/fa"
 import classes from "./navbar.module.css"
 const Navbar =()=>{
+  let { theme } = useContext(ThemeContext);
+  
   //state
   const [openNav,setOpenNav] =useState(false);
   
@@ -13,8 +15,8 @@ const Navbar =()=>{
   }
   
   return (
-    <div className={classes.nav_wrapper}> 
-    <h2 suppressHydrationWarning >Portfolio</h2>
+    <div className={`${classes.nav_wrapper} ${theme ==='white' && classes.white_theme}`}> 
+    <h2 >Portfolio</h2>
 <div className={classes.desktopnav}> <ul >
  <li> <Link href="#home">Home</Link> </li>
  <li> <Link href="#resume">Resume</Link> </li>

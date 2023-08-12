@@ -20,7 +20,7 @@ const TechStack = () => {
   ];
   return (
     <div className={`${classes.tools_section} ${theme ==="white" && classes.white_theme}`}>
-      <SubHeader label={`Experience`}></SubHeader>
+      <SubHeader label={`Tech/Stack`}></SubHeader>
       <div className={classes.section_card_container}> 
         <div className={classes.tool_card}>
         <GoDotFill className={`${classes.tool_icon} ${classes.first_icon}`}  />

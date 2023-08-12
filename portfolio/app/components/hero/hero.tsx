@@ -2,6 +2,7 @@ import { useRef, useEffect, useState,useContext } from "react";
 import { ThemeContext } from "../../../context/themecontext";
 import Link from "next/link";
 
+import Theme from '../theme/theme'
 import classes from "./hero.module.css";
 
 import { mydetails } from "@/app/utils/data";
@@ -26,7 +27,7 @@ const Hero = () => {
     <div className={`${theme==="white" && classes.white_theme}`}>
       <div className={`${classes.hero_section}`} id='home'>
         <div className={classes.hero_overlay}>
-          <h1></h1>
+         <div className={classes.theme_container}><Theme></Theme></div>
           <div className={classes.hero_section_head} style={{height:`${height}px`}}>
             <h4>
               I love <span>programming</span>
