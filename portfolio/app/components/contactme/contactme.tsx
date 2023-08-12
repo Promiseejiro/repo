@@ -1,3 +1,9 @@
+
+import {useContext} from "react"
+import { ThemeContext } from "../../../context/themecontext";
+
+
+
 import Link from 'next/link';
 import  classes from "./contactme.module.css"
 ///icons
@@ -6,6 +12,8 @@ import {BiLogoFacebook,BiLogoLinkedin} from "react-icons/bi"
 import {AiFillGithub}from "react-icons/ai";
 
 const Contacts =()=>{
+  let { theme } = useContext(ThemeContext);
+  
   const links=[
     {
       link:"he",

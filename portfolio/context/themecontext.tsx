@@ -1,16 +1,25 @@
 'use client'
  
 import { createContext,useState } from 'react'
+import { Context } from 'vm';
  
  interface ContextProps {
   theme: String;
+  changeTheme:(currentTheme:string)=>void;
+
  }
 export const ThemeContext = createContext<ContextProps>({
-  theme:'white'
+  theme:'white',
+   changeTheme :()=>{
+  }
 })
  
 export default function ThemeProvider({ children }:any) {
- const [theme,setTheme] =useState("white")
+ const [theme,setTheme] =useState<String>("white")
+
+const changeTheme=(currentTheme:String)=>{
+setTheme(currentTheme)
+}
  
-  return <ThemeContext.Provider value={{ theme }}>{children}</ThemeContext.Provider>
+  return <ThemeContext.Provider value={{ theme ,changeTheme}}>{children}</ThemeContext.Provider>
 }

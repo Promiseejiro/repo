@@ -1,3 +1,6 @@
+import React,{useContext} from "react";
+import { ThemeContext } from "../../../context/themecontext";
+
 import classes from "./contact.module.css";
 
 //icon
@@ -10,9 +13,11 @@ import { MdAlternateEmail ,MdLocationOn} from "react-icons/md";
 import SubHeader from "../subHeading/subheading";
 
 const Contact = () => {
+  let { theme } = useContext(ThemeContext);
+  
 
   return (
-    <div className={classes.services_section}id='contact'>
+    <div className={`${classes.services_section} ${theme ==='white' && classes.white_theme}`}id='contact'>
       <SubHeader label="Contact me"></SubHeader>
       <div className={classes.contact_main_container}>
         <div className={classes.item}>

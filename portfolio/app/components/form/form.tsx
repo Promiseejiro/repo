@@ -1,11 +1,17 @@
+import React,{useContext} from "react";
+import { ThemeContext } from "../../../context/themecontext";
+
+
 import classes from "./form.module.css";
 
 import SubHeader from "../subHeading/subheading";
 
 const Form = () => {
+  let { theme } = useContext(ThemeContext);
+  
   const onChangeHandler = (e: any) => {};
   return (
-    <div className={classes.form}>
+    <div className={`${classes.form} ${theme =='white' && classes.white_theme}`}>
       <SubHeader label="Hire me"></SubHeader>
       <form>
         <div className={classes.form_controller}>

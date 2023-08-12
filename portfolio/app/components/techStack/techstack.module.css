@@ -7,10 +7,6 @@
   border: 0.1px solid var(--border-color);
 }
 
-.white_theme .section_card_container{
-  border: .1px solid var(--dark-color);
-}
-
 .tools_section .tools_section_card_container {
   display: block;
 }
@@ -60,7 +56,7 @@
     margin: auto;
   }
 
-  .tools_section_card_container {
+  .section_card_container {
     display: flex;
     align-items: center;
     justify-content: center;

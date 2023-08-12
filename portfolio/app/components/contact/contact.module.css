@@ -18,15 +18,27 @@
   font-weight: 600;
 }
 
+.white_theme .icons{
+  color:var(--success-color)
+}
+
 .services_section h4 {
   font-size: 20px;
   color: var(--white-color);
   margin: 1rem;
 }
 
+.white_theme h4{
+  color:var(--dark-color)
+}
+
 .services_section p {
   text-align: center;
   color: var(--gray-color);
+}
+
+.white_theme p{
+  color:var(--dark-color);
 }
 
 @media (min-width: 700px) {

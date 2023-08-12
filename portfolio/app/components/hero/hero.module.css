@@ -5,7 +5,7 @@
   background-image: url("https://res.cloudinary.com/dxqg5hify/image/upload/v1691739399/promise.18621d9b26d477ddd12c_1690311930751-removebg-preview_1_jedflt.png");
   background-position: center;
   background-repeat: no-repeat;
-  padding: 2rem;
+  background-size: contain ;
 }
 
 .hero_overlay {
@@ -18,7 +18,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 5rem 2rem;
+}
+
+.white_theme .hero_overlay{
+  background-color:rgba(0, 0, 0, .6) ;
 }
 
 .hero_overlay p,
@@ -28,7 +32,7 @@
 }
 
 .white_theme .hero_overlay p, .white_theme .hero_overlay h1, .white_theme .hero_overlay h4{
-  color:var(--dark-color);
+  color:var(--white-color);
 }
 
 .hero_section_head {
@@ -98,7 +102,6 @@
   height: auto;
   display: block;
   margin: 1rem auto;
-  border:3px solid var(--border-color);
 }
 
 
@@ -141,15 +144,16 @@
 
 .details a {
   border: 2px solid var(--blue-color);
-  color: var(--blue-color);
+  background-color: var(--blue-color);
+  color: var(--white-color);
   font-weight: 500;
   padding: 0.5rem 2rem;
   text-align: center;
 }
 
 .white_theme .details a{
-  color:var(--success-color);
   border:var(--success-color) 2px solid;
+  background-color:var(--success-color);
 }
 
 @media (min-width: 700px) {
