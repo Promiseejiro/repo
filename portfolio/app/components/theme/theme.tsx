@@ -4,6 +4,11 @@ import { ThemeContext } from "../../../context/themecontext";
 import classes from './theme.module.css'
 
 const Theme =()=>{
+const themes =[
+     'white',
+     'black'
+]
+
      let { theme,changeTheme } = useContext(ThemeContext);
   
 const chhangeHandler =()=>{
