@@ -14,8 +14,15 @@ const Navbar =()=>{
     setOpenNav(!openNav)
   }
   
+ /* document.addEventListener('click',()=>{
+    setOpenNav(false)
+  });
+  document.addEventListener('scroll',()=>{
+    setOpenNav(false)
+  });*/
+  
   return (
-    <div className={`${classes.nav_wrapper} ${theme ==='white' && classes.white_theme}`}> 
+    <div className={`${classes.nav_wrapper} ${theme ==='white' && classes.white_theme} ${theme ==='brown' && classes.brown_theme}`}> 
     <h2 >Portfolio</h2>
 <div className={classes.desktopnav}> <ul >
  <li> <Link href="#home">Home</Link> </li>

@@ -1,15 +1,19 @@
 .projects_section {
-  margin: 2rem 0;
-  padding: 0 2rem;
+  margin: 1rem 1rem;
+  padding: 0 1rem;
+  
 }
 
 .card_container {
   display: block;
+  border: .1px solid var(--border-color);
+  padding: 1rem;
 }
 
 .projects_section .card {
   display: flex;
   flex-direction: column;
+  margin: 1rem 0;
 }
 
 .projects_section .card .image {
@@ -44,7 +48,7 @@
   font-weight: 500;
   color: var(--white-color);
   text-align: center;
-  padding: 0.5rem 0;
+  padding: 0.1rem 0;
 }
 
 .white_theme .card h4{
@@ -70,6 +74,10 @@
   color:var(--dark-color);
 }
 
+.brown_theme .project_btn{
+  color:var(--dark-color);
+}
+
 .active_btn {
   font-size: 14px;
   font-weight: 500;
@@ -80,6 +88,10 @@
 
 .white_theme .active_btn {
   border-bottom: 0.5px solid var(--success-color);
+}
+
+.brown_theme .active_btn {
+  border-bottom: 0.5px solid var(--brown-color);
 }
 
 @media (min-width: 600px) {

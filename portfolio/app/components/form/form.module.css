@@ -1,5 +1,5 @@
 .form {
-  margin: 2rem 2rem 5rem 2rem;
+  margin: 2rem 1rem 5rem 1rem;
   padding: 2rem 0;
 }
 
@@ -39,6 +39,7 @@
 .form .form_controller .submit {
   display: inline-block;
   border: 2px solid var(--blue-color);
+  background-color: var(--blue-color);
   color: var(--white-color);
   font-weight: 500;
   padding: 0.5rem 2rem;
@@ -49,8 +50,12 @@
 .white_theme  .form_controller .submit{
   border:2px solid var(--success-color);
   background-color: var(--success-color);
-  
+}
 
+.brown_theme  .form_controller .submit{
+  border:2px solid var(--brown-color);
+  background-color: var(--brown-color);
+  color:var(--dark-color);
 }
 
 @media (min-width: 700px) {

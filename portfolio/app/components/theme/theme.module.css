@@ -1,15 +1,14 @@
-.theme_container{
+.theme_container {
      display: flex;
      justify-content:right;
      align-items: center;
-    
 }
 
 .item div{
      width: 1rem;
      height: 1rem;
      border-radius: 50%;
-     margin-right:1rem;
+     margin-left:1rem;
 }
 
 .item_1 div{
@@ -21,5 +20,5 @@ background-color: var(--white-color);
 }
 
 .item_3 div{
-     background-color: var(--success-color);
+     background-color: var(--brown-color);
 }

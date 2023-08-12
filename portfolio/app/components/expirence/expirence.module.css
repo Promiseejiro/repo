@@ -1,5 +1,5 @@
 .expirence_section {
-  margin: 2rem;
+  margin: 2rem 1rem;
 }
 
 .experience_main_container {
@@ -21,11 +21,13 @@
 
 .expirence_section .card h6 {
   color: var(--gray-color);
+  font-weight: 500;
 }
 
 
 .expirence_section .card p {
   color: var(--gray-color);
+  font-size: 14px;
 }
 
 .expirence_section .card span {
@@ -39,8 +41,16 @@
   color:var(--dark-color);
 }
 
+.brown_theme .card h4, .brown_theme .card h6, .brown_theme .card p{
+  color:var(--dark-color);
+}
+
 .white_theme .card span{
   color:var(--success-color);
+}
+
+.brown_theme .card span{
+  color:var(--brown-color);
 }
 
 @media (min-width: 700px) {

@@ -18,10 +18,11 @@ const Education=()=>{
             date: "Sept 2015 - 2018",
             heading: "Senior secondary leaving certificate",
             text: "Asoro Grammer school. Benin city",
+            course:"Science"
           },
         ];
 return(
-     <div className={`${classes.expirence_section} ${theme === "white" && classes.white_theme}`}>
+     <div className={`${classes.expirence_section} ${theme === "white" && classes.white_theme} ${theme ==="brown" && classes.brown_theme}`}>
      <SubHeader label={`Education`}></SubHeader>
      <div className={classes.experience_main_container}> {qualifications.map((experience) => (
        <div className={classes.card}>

@@ -9,7 +9,7 @@ interface SubHeaderprops {
 const SubHeader = ({label}:SubHeaderprops) => {
   let { theme } = useContext(ThemeContext);
   
-  return <h3 className={`${classes.sub_heading} ${theme ==="white" && classes.white_theme}`}>{label}</h3>
+  return <h3 className={`${classes.sub_heading} ${theme ==="white" && classes.white_theme} ${theme ==="brown" && classes.brown_theme}`}>{label}</h3>
 };
 
 export default SubHeader;

@@ -29,6 +29,10 @@
   color:var(--dark-color);
 }
 
+.brown_theme h5,.brown_theme p{
+  color:var(--dark-color);
+}
+
 .frameworks .card .progressbar {
   width: 100%;
   height: 3px;
@@ -42,6 +46,10 @@
 
 .white_theme .card .progressbar .progress{
   background-color: var(--success-color);
+}
+
+.brown_theme .card .progressbar .progress{
+  background-color: var(--brown-color);
 }
 
 @media (min-width: 700px) {
