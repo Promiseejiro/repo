@@ -13,6 +13,10 @@
   background-color: var(--white-color);
 }
 
+.brown_theme {
+  background-color: var(--white-color);
+}
+
 .nav_wrapper h2 {
   color: var(--white-color);
   font-size: 20px;
@@ -23,6 +27,10 @@
   color: var(--dark-color);
 }
 
+.brown_theme h2 {
+  color: var(--dark-color);
+}
+
 .mobile_nav {
   position: fixed;
   top: 3rem;
@@ -30,6 +38,15 @@
   width: 100vw;
   z-index: 2;
   padding: 3rem 0;
+  background-color: var(--dark-color);
+}
+
+.white_theme .mobile_nav{
+  background-color: var(--white-color);
+}
+
+.brown_theme .mobile_nav{
+  background-color: var(--white-color);
 }
 
 .nav_icon {
@@ -39,6 +56,10 @@
 }
 
 .white_theme .nav_icon {
+  color: var(--dark-color);
+}
+
+.brown_theme .nav_icon {
   color: var(--dark-color);
 }
 
@@ -65,6 +86,10 @@
 }
 
 .white_theme li a {
+  color: var(--dark-color);
+}
+
+.brown_theme li a {
   color: var(--dark-color);
 }
 

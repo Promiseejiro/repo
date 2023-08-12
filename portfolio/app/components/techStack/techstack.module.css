@@ -1,5 +1,5 @@
 .tools_section {
-  margin: 2rem;
+  margin: 2rem 1rem;
   padding: 2rem 0;
 }
 
@@ -19,12 +19,16 @@
 
 .tools_section div h4 {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--white-color);
   white-space: nowrap;
 }
 
 .white_theme div h4{
+  color:var(--dark-color);
+}
+
+.brown_theme div h4{
   color:var(--dark-color);
 }
 
@@ -39,6 +43,10 @@
   color:var(--success-color);
 }
 
+.brown_theme .tool_icon{
+  color:var(--brown-color);
+}
+
 .first_icon {
   font-size: 25px;
   font-weight: 500;
@@ -48,6 +56,10 @@
 
 .white_theme .first_icon{
   color:var(--success-color);
+}
+
+.brown_theme .first_icon{
+  color:var(--brown-color);
 }
 
 @media (min-width: 700px) {

@@ -1,5 +1,5 @@
 .services_section {
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .services_section .card {
@@ -22,13 +22,22 @@
   color:var(--success-color)
 }
 
+.brown_theme .icons{
+  color:var(--brown-color)
+}
+
 .services_section h4 {
   font-size: 20px;
   color: var(--white-color);
   margin: 1rem;
+  font-weight: 500;
 }
 
 .white_theme h4{
+  color:var(--dark-color)
+}
+
+.brown_theme h4{
   color:var(--dark-color)
 }
 
@@ -38,6 +47,10 @@
 }
 
 .white_theme p{
+  color:var(--dark-color);
+}
+
+.brown_theme p{
   color:var(--dark-color);
 }
 

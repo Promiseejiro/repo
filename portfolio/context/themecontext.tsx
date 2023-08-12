@@ -9,13 +9,13 @@ import { Context } from 'vm';
 
  }
 export const ThemeContext = createContext<ContextProps>({
-  theme:'white',
+  theme:'brown',
    changeTheme :()=>{
   }
 })
  
 export default function ThemeProvider({ children }:any) {
- const [theme,setTheme] =useState<String>("white")
+ const [theme,setTheme] =useState<String>("brown")
 
 const changeTheme=(currentTheme:String)=>{
 setTheme(currentTheme)

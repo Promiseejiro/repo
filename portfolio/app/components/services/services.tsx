@@ -21,7 +21,7 @@ const Service = () => {
   ];
 
   return (
-    <div className={`${classes.services_section} ${theme ==="white" && classes.white_theme}`}>
+    <div className={`${classes.services_section} ${theme ==="white" && classes.white_theme} ${theme ==="brown" && classes.brown_theme}`}>
     <SubHeader label='Services'></SubHeader>
       <div className={classes.service_container}>
       <div className={classes.box}>

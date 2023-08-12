@@ -17,7 +17,7 @@ const Contact = () => {
   
 
   return (
-    <div className={`${classes.services_section} ${theme ==='white' && classes.white_theme}`}id='contact'>
+    <div className={`${classes.services_section} ${theme ==='white' && classes.white_theme} ${theme ==="brown" && classes.brown_theme}`}id='contact'>
       <SubHeader label="Contact me"></SubHeader>
       <div className={classes.contact_main_container}>
         <div className={classes.item}>
@@ -29,8 +29,7 @@ const Contact = () => {
         </div>
         <div className={classes.item}>
           <div className={classes.card}>
-          <MdCall className={classes.icons} />,
-            <h4>Phone</h4>
+          <MdCall className={classes.icons} />   <h4>Phone</h4>
             <p>+2349030257743</p>
           </div>
         </div>

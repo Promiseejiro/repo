@@ -27,11 +27,11 @@ const Expirence =()=>{
           {
             date: "May 2022 - Present",
             heading: "RERHA Publicity tool",
-            text: "Fullstack at RERHA. that helps Streamline customer interactions, enhance relationships. Your ultimate CRM solution for growth and satisfaction. Elevate engagement effortlessly."
+            text: "Fullstack developer at RERHA. that helps Streamline customer interactions, enhance relationships. Your ultimate CRM solution for growth and satisfaction. Elevate engagement effortlessly."
           },
         ];
      return(
-          <div className={`${classes.expirence_section} ${theme ==="white" && classes.white_theme }`}>
+          <div className={`${classes.expirence_section} ${theme ==="white" && classes.white_theme } ${theme ==="brown" && classes.brown_theme}`}>
         <SubHeader label={`Experience`}></SubHeader>
         <div className={classes.experience_main_container}>
         {experiences.map((experience) => (

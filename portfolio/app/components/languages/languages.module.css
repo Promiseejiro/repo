@@ -33,10 +33,14 @@
    .languages .card h4 {
      color: var(--white-color);
      margin-top: 1rem;
-     font-weight: 500;
+     font-weight: 600;
    }
    
    .white_theme .card h4{
+     color:var(--dark-color);
+   }
+   
+   .brown_theme .card h4{
      color:var(--dark-color);
    }
    
@@ -48,12 +52,18 @@
      border-radius: 50%;
      width: 4rem;
      height: 4rem;
-     border: 4px solid var(--blue-color);
+     border: 5px solid var(--blue-color);
    }
    
    .white_theme .card span{
      border:6px solid var(--success-color);
      color:var(--dark-color);
+   }
+   
+   .brown_theme .card span{
+     border:6px solid var(--brown-color);
+     color:var(--dark-color);
+     font-weight: 500;
    }
    
 

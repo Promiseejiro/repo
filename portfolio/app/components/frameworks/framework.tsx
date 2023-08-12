@@ -23,7 +23,7 @@ const Frameworks = () => {
     },
   ];
   return (
-    <div className={`${classes.frameworks} ${theme ==="white" && classes.white_theme}`}>
+    <div className={`${classes.frameworks} ${theme ==="white" && classes.white_theme} ${theme ==="brown" && classes.brown_theme}`}>
       <SubHeader label={`Frameworks`}></SubHeader>
       <div className={classes.framework_main_container}>
         {frameworks.map((framework) => (

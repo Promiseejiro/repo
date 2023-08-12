@@ -11,21 +11,26 @@ const themes =[
 
      let { theme,changeTheme } = useContext(ThemeContext);
   
-const chhangeHandler =()=>{
-changeTheme('yello')
+const changeHandler =(currentTheme: String)=>{
+changeTheme(currentTheme)
 }
-
      return(
 
           <div className={classes.theme_container}>
                <div className={`${
-                   classes.item} ${classes.item_1}`} onClick={chhangeHandler}>
+                   classes.item} ${classes.item_1}`} onClick={()=>{
+                     changeHandler("white")
+                   }}>
                     <div></div>
                </div>
-               <div className={`${classes.item} ${classes.item_2}`} onClick={chhangeHandler}>
+               <div className={`${classes.item} ${classes.item_2}`} onClick={()=>{
+                     changeHandler("dark")
+                   }}>
                     <div></div>
                </div>
-               <div className={`${classes.item} ${classes.item_3}`}onClick={chhangeHandler}>
+               <div className={`${classes.item} ${classes.item_3}`} onClick={()=>{
+                     changeHandler("brown")
+                   }}>
                     <div></div>
                </div>
           </div>

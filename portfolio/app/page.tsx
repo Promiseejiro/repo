@@ -30,7 +30,7 @@ export default function Home() {
   let { theme } = useContext(ThemeContext);
   return (
     <div>
-        <div className={`${classes.main_container}   ${poppins.className}  ${theme ==="white" && classes.white}`}>
+        <div className={`${classes.main_container}   ${poppins.className}  ${theme ==="white" && classes.white_theme} ${theme ==="brown" && classes.brown_theme}`}>
           <div>
             <Navbar />
           </div>

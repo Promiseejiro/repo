@@ -19,7 +19,7 @@ const TechStack = () => {
     "MYSQL/Mongo DB",
   ];
   return (
-    <div className={`${classes.tools_section} ${theme ==="white" && classes.white_theme}`}>
+    <div className={`${classes.tools_section} ${theme ==="white" && classes.white_theme} ${theme ==="brown" && classes.brown_theme}`}>
       <SubHeader label={`Tech/Stack`}></SubHeader>
       <div className={classes.section_card_container}> 
         <div className={classes.tool_card}>
