@@ -38,8 +38,8 @@ const Contacts =()=>{
   return (
    <div className={`${classes.contact_container} ${theme ==="white" && classes.white_theme}
    ${theme ==="brown" && classes.brown_theme}
-   `}>{links.map((contact)=>(
-   <Link href={contact.link}>
+   `}>{links.map((contact,index)=>(
+   <Link href={contact.link} key={index}>
      {contact.icon}</Link>
      ))}  </div>
     )

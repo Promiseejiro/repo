@@ -75,15 +75,15 @@ const Hero = () => {
             </p>
             <div className={classes.ul_container}>
               <ul className={classes.first_ul}>
-                {mydetails.map((detail) => (
-                  <li>
+                {mydetails.map((detail,index) => (
+                  <li key={index}>
                     {detail.label} : <span>{detail.value}</span>
                   </li>
                 ))}
               </ul>
               <ul className={classes.second_ul}>
-                {mydetails.map((detail) => (
-                  <li>
+                {mydetails.map((detail,index) => (
+                  <li key={index}>
                     {detail.label} : <span>{detail.value}</span>
                   </li>
                 ))}

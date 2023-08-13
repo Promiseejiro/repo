@@ -25,8 +25,8 @@ const Service = () => {
     <SubHeader label='Services'></SubHeader>
       <div className={classes.service_container}>
       <div className={classes.box}>
-          {services.map((service) => (
-          <div className={classes.card}>
+          {services.map((service,index) => (
+          <div className={classes.card} key={index}>
             {service.icon}
             <h4>{service.heading}</h4>
             <p>{service.text}</p>

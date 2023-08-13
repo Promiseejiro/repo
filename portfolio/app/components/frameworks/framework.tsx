@@ -26,8 +26,8 @@ const Frameworks = () => {
     <div className={`${classes.frameworks} ${theme ==="white" && classes.white_theme} ${theme ==="brown" && classes.brown_theme}`}>
       <SubHeader label={`Frameworks`}></SubHeader>
       <div className={classes.framework_main_container}>
-        {frameworks.map((framework) => (
-          <div className={classes.card}>
+        {frameworks.map((framework,index) => (
+          <div className={classes.card} key={index}>
             <div className={classes.info_details}>
               <h5>{framework.name}</h5> <p>{framework.percent}</p>
             </div>
