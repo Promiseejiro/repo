@@ -17,8 +17,8 @@ const Project = () => {
       </div>
       <h4>Comment section</h4>
       <div className={clasess.link_container}>
-        {links.map((link) => (
-          <button
+        {links.map((link,index) => (
+          <button key={index}
             className={`${clasess.project_btn} ${link===current && clasess.active_btn}`}
             onClick={() => setCurrent(link)}
           >

@@ -34,8 +34,8 @@ const Expirence =()=>{
           <div className={`${classes.expirence_section} ${theme ==="white" && classes.white_theme } ${theme ==="brown" && classes.brown_theme}`}>
         <SubHeader label={`Experience`}></SubHeader>
         <div className={classes.experience_main_container}>
-        {experiences.map((experience) => (
-            <div className={classes.card}>
+        {experiences.map((experience,index) => (
+            <div className={classes.card} key={index}>
               <span>{experience.date}</span>
               <h4>{experience.heading}</h4>
               <p>{experience.text}</p>
