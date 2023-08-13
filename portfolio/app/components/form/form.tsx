@@ -1,37 +1,74 @@
-import React,{useContext} from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "../../../context/themecontext";
 
-import {NextResponse} from "next/server"
+import { NextResponse } from "next/server";
 
 import classes from "./form.module.css";
 
 import SubHeader from "../subHeading/subheading";
+import "../../api/message/route";
 
-const Form = () => {
-  let { theme } = useContext(ThemeContext);
-  
-  const onChangeHandler = (e: any) => {};
-  
-  function POST() {
-  const res = await fetch('https://data.mongodb-api.com/...', {
-    method: 'POST',
-    body: JSON.stringify({ time: new Date().toISOString() }),
-  })
-  const data = await res.json()
-  return NextResponse.json(data)
+interface messageContent {
+  email: String;
+  name: String;
+  message: String;
 }
+const Form = () => {
+  const [message, setMessage] = useState<messageContent>({
+    email: "",
+    name: "",
+    message: "",
+  });
+  let { theme } = useContext(ThemeContext);
+
+  const onChangeHandler = (e: any) => {
+setMessage({...message,[e.target.name]:e.target.value})
+console.log(message)
+  };
+ 
+  const handleSubmit = () => {
+    fetch("../../api/hire", {
+      method: "POST",
+      body: JSON.stringify({
+      message,
+        Headers: {
+          "Content-Type": "application/json",
+        },
+      }),
+    })
+      .then((response: any) => {
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+      });
+  };
+  useEffect(() => {
+    fetch("../../api/message")
+      .then((response: any) => {
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+      });
+  }, []);
+
   return (
-    <div className={`${classes.form} ${theme =='white' && classes.white_theme} ${theme ==="brown" && classes.brown_theme}`}>
+    <div
+      className={`${classes.form} ${theme == "white" && classes.white_theme} ${
+        theme === "brown" && classes.brown_theme
+      }`}
+    >
       <SubHeader label="Hire me"></SubHeader>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className={classes.form_controller}>
-          <input placeholder="Name" onChange={onChangeHandler} />
+          <input placeholder="Name" onChange={onChangeHandler} name='name'/>
         </div>
         <div className={classes.form_controller}>
-          <input placeholder="Email" onChange={onChangeHandler} />
+          <input placeholder="Email" onChange={onChangeHandler} name='email' />
         </div>
         <div className={classes.form_controller}>
-          <textarea placeholder="message" onChange={onChangeHandler}></textarea>
+          <textarea placeholder="message" onChange={onChangeHandler} name='message'></textarea>
         </div>
         <div className={classes.form_controller}>
           <input
