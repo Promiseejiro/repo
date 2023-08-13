@@ -1,5 +1,6 @@
-import {useState} from "react";
+import { useState } from "react";
 
+import Image from "next/image";
 import Link from "next/link";
 
 //css
@@ -12,14 +13,17 @@ const Project = () => {
   return (
     <div className={clasess.card}>
       <div className={clasess.image}>
-        <img src="https://res.cloudinary.com/dxqg5hify/image/upload/v1688078799/xes89qbxpjvylz9kqvdg.jpg" />
+        <Image src="https://res.cloudinary.com/dxqg5hify/image/upload/v1688078799/xes89qbxpjvylz9kqvdg.jpg" alt="Picture of the author" />
         <div className={clasess.overlay}></div>
       </div>
       <h4>Comment section</h4>
       <div className={clasess.link_container}>
-        {links.map((link,index) => (
-          <button key={index}
-            className={`${clasess.project_btn} ${link===current && clasess.active_btn}`}
+        {links.map((link, index) => (
+          <button
+            key={index}
+            className={`${clasess.project_btn} ${
+              link === current && clasess.active_btn
+            }`}
             onClick={() => setCurrent(link)}
           >
             {link}

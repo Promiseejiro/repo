@@ -1,11 +1,16 @@
 import { useRef, useEffect, useState, useContext } from "react";
+
 import { ThemeContext } from "../../../context/themecontext";
+
 import Link from "next/link";
+import Image from "next/image";
 
 import Theme from "../theme/theme";
+
 import classes from "./hero.module.css";
 
 import { mydetails } from "@/app/utils/data";
+
 interface heightProps {
   height: String;
 }
@@ -61,10 +66,10 @@ const Hero = () => {
       <div className={classes.details_container}>
         <div className={classes.details}>
           <div>
-            <img
+            <Image
               className={classes.detailes_image}
               src="https://res.cloudinary.com/dxqg5hify/image/upload/v1691739399/promise.18621d9b26d477ddd12c_1690311930751-removebg-preview_1_jedflt.png"
-            />
+              alt="Picture of the author"/>
           </div>
 
           <div className={classes.content} id="resume">
