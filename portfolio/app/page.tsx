@@ -1,6 +1,6 @@
 "use client";
 import { ThemeContext } from "../context/themecontext";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
@@ -16,6 +16,7 @@ import Languages from "./components/languages/languages";
 import TechStack from "./components/techStack/techStack";
 import Contact from "./components/contact/contact";
 import Form from "./components/form/form";
+import Scroll from "./components/scrolldetector/sroolldetector";
 //css
 import classes from "./page.module.css";
 
@@ -23,41 +24,62 @@ import { Poppins } from "next/font/google";
 
 export const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400","500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700", "800"],
 });
+interface touchProp {
+  x: Number;
+  y: Number;
+}
 
 export default function Home() {
   let { theme } = useContext(ThemeContext);
-  return (
-    <div>
-        <div className={`${classes.main_container}   ${poppins.className}  ${theme ==="white" && classes.white_theme} ${theme ==="brown" && classes.brown_theme}`}>
-          <div>
-            <Navbar />
-          </div>
-          <Contacts />
 
-          <Hero></Hero>
+  const [touchPoint, setTouchPoint] = useState<touchProp>({
+    x: 0,
+    y: 0,
+  });
+  const mouseMove = (e: any) => {
+    var x = e.clientX;
+    var y = e.clientY;
+    setTouchPoint({
+      ...touchPoint,
+      x: x -3,
+      y: y-3,
+    });
+  };
+  return (
+    <div   onMouseMove={mouseMove}>
+      <div
+        className={`${classes.main_container}   ${poppins.className}  ${
+          theme === "white" && classes.white_theme
+        } ${theme === "brown" && classes.brown_theme}`}
+      >
+        <Scroll x={touchPoint.x} y={touchPoint.y}></Scroll>
+        <div>
+          <Navbar />
+        </div>
+        <Contacts />
+
+        <Hero></Hero>
 
         <Service></Service>
 
-          <Expirence></Expirence>
+        <Expirence></Expirence>
 
         <Education></Education>
 
-          <Frameworks></Frameworks>
+        <Frameworks></Frameworks>
 
-           <Languages></Languages>
+        <Languages></Languages>
 
-          <TechStack></TechStack>
+        <TechStack></TechStack>
 
-           <Projects></Projects>
+        <Projects></Projects>
 
-          <Contact></Contact>
+        <Contact></Contact>
 
-          <Form></Form> 
-          
-        </div>
-    
+        <Form></Form>
+      </div>
     </div>
   );
 }

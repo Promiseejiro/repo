@@ -72,7 +72,7 @@
 
 .nav_wrapper li {
   border-bottom: 1px solid var(--very-light-gray-color);
-  padding: 1.5rem 1rem 1.5rem 1rem;
+  padding: 0 1rem;
   color: var(--dark-color);
   border-radius: 10px;
 }
@@ -83,6 +83,25 @@
   text-decoration: none;
   color: var(--gray-color);
   text-align: center;
+}
+
+.nav_wrapper li a:hover{
+  animation: translateYAnimation 2s ease 1;
+}
+
+@keyframes translateYAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .white_theme li a {

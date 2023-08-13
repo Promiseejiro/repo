@@ -1,0 +1,20 @@
+.scrollBox{
+     position: fixed;
+     width: 2rem;
+     height: 2rem;
+     background-color: var(--blue-color);
+     z-index: 4;
+     left: 0;
+     top: 0;
+     border-radius: 50%;
+     opacity: .5;
+}
+
+
+.white_theme{
+     background-color: var(--success-color);
+}
+
+.brown_theme{
+     background-color: var(--brown-color);
+}
