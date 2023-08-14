@@ -19,8 +19,8 @@
 
 .nav_wrapper h2 {
   color: var(--white-color);
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .white_theme h2 {
@@ -72,9 +72,12 @@
 
 .nav_wrapper li {
   border-bottom: 1px solid var(--very-light-gray-color);
-  padding: 0 1rem;
   color: var(--dark-color);
   border-radius: 10px;
+}
+
+.mobile_nav li{
+  padding: 1rem 1rem;
 }
 
 .nav_wrapper li a {
@@ -122,11 +125,14 @@
   justify-content: space-evenly;
 }
 
-@media (min-width: 700px) {
-  .nav_wrapper {
-    padding: 1rem 4rem;
-  }
+.desktopnav li{
+  padding: 0rem 1rem;
+}
 
+@media (min-width: 700px) {
+  .nav_wrapper{
+    padding:1rem 2rem
+  }
   .desktopnav {
     display: block;
   }

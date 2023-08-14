@@ -11,6 +11,7 @@ import classes from "./hero.module.css";
 
 import { mydetails } from "@/app/utils/data";
 
+import profilepic from '../../../image/profile.png'
 interface heightProps {
   height: String;
 }
@@ -35,11 +36,10 @@ const Hero = () => {
       }`}
     >
       <div className={`${classes.hero_section}`} id="home">
-        <img src="https://res.cloudinary.com/dxqg5hify/image/upload/v1691739399/promise.18621d9b26d477ddd12c_1690311930751-removebg-preview_1_jedflt.png" />
+        <Image src={profilepic} alt="profile"/>
         <div className={classes.hero_overlay}>
           <div className={classes.border_container}>
             <div className={`${classes.box} ${classes.top_left}`}></div>
-
             <div className={`${classes.box} ${classes.top_right}`}></div>
             <div className={`${classes.box} ${classes.bottom_left}`}></div>
             <div className={`${classes.box} ${classes.bottom_right}`}></div>
@@ -68,8 +68,8 @@ const Hero = () => {
           <div>
             <Image
               className={classes.detailes_image}
-              src="https://res.cloudinary.com/dxqg5hify/image/upload/v1691739399/promise.18621d9b26d477ddd12c_1690311930751-removebg-preview_1_jedflt.png"
-              alt="Picture of the author"/>
+              src={profilepic} alt="profile"
+              />
           </div>
 
           <div className={classes.content} id="resume">
