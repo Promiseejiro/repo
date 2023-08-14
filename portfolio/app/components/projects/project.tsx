@@ -6,6 +6,8 @@ import Link from "next/link";
 //css
 import clasess from "./project.module.css";
 
+import image from '../../../image/project.png'
+
 const Project = () => {
   const [current, setCurrent] = useState<String>("Link");
   const links = [`Link`, `Repo`];
@@ -13,7 +15,7 @@ const Project = () => {
   return (
     <div className={clasess.card}>
       <div className={clasess.image}>
-        <Image src="https://res.cloudinary.com/dxqg5hify/image/upload/v1688078799/xes89qbxpjvylz9kqvdg.jpg" alt="Picture of the author" />
+        <Image src={image} alt="Picture of the author" />
         <div className={clasess.overlay}></div>
       </div>
       <h4>Comment section</h4>

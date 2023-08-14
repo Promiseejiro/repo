@@ -241,6 +241,10 @@
 }
 
 @media (min-width: 700px) {
+.hero_overlay{
+  padding: 5rem 2rem 1rem 2rem;
+}
+
   .hero_section img{
    max-width: 500px;
    display: block;
