@@ -35,7 +35,7 @@ const Hero = () => {
         theme === "brown" && classes.brown_theme
       }`}
     >
-      <div className={`${classes.hero_section}`} id="home">
+      {/* <div className={`${classes.hero_section}`} id="home">
         <Image src={profilepic} alt="profile"/>
         <div className={classes.hero_overlay}>
           <div className={classes.border_container}>
@@ -100,7 +100,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
