@@ -5,7 +5,7 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 import Navbar from "./components/navbar/navbar";
-import Hero from "./components/hero/hero";
+// import Hero from "./components/hero/hero";
 import Service from "./components/services/services";
 import Contacts from "./components/contactme/contactme";
 import Projects from "./components/projects/projects";
@@ -60,7 +60,7 @@ export default function Home() {
         </div>
         <Contacts />
 
-        <Hero></Hero>
+        {/* <Hero></Hero> */}
 
         <Service></Service>
 
