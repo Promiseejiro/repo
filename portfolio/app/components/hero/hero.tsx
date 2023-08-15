@@ -31,9 +31,9 @@ const Hero = () => {
   const sliderRef = useRef();
   return (
     <div
-      className={`${theme === "white" && classes.white_theme} ${
-        theme === "brown" && classes.brown_theme
-      }`}
+      // className={`${theme === "white" && classes.white_theme} ${
+      //   theme === "brown" && classes.brown_theme
+      // }`}
     >
       {/* <div className={`${classes.hero_section}`} id="home">
         <Image src={profilepic} alt="profile"/>
