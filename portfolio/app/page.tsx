@@ -5,7 +5,7 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 import Navbar from "./components/navbar/navbar";
-// import Hero from "./components/hero/hero";
+import Hero from "./components/hero/hero";
 import Service from "./components/services/services";
 import Contacts from "./components/contactme/contactme";
 import Projects from "./components/projects/projects";
@@ -22,7 +22,7 @@ import classes from "./page.module.css";
 
 import { Poppins } from "next/font/google";
 
-export const poppins = Poppins({
+ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
 });
@@ -30,8 +30,7 @@ interface touchProp {
   x: Number;
   y: Number;
 }
-
-export default function Home() {
+ function Home() {
   let { theme } = useContext(ThemeContext);
 
   const [touchPoint, setTouchPoint] = useState<touchProp>({
@@ -60,7 +59,7 @@ export default function Home() {
         </div>
         <Contacts />
 
-        {/* <Hero></Hero> */}
+        <Hero></Hero>
 
         <Service></Service>
 
@@ -83,3 +82,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home
