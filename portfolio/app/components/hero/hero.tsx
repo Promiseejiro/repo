@@ -9,7 +9,7 @@ import Theme from "../theme/theme";
 
 import classes from "./hero.module.css";
 
-import { mydetails } from "@/app/utils/data";
+import { mydetails,mydetails2 } from "@/app/utils/data";
 
 import profilepic from '../../../image/profile.png'
 interface heightProps {
@@ -87,7 +87,7 @@ const Hero = () => {
                 ))}
               </ul>
               <ul className={classes.second_ul}>
-                {mydetails.map((detail,index) => (
+                {mydetails2.map((detail,index) => (
                   <li key={index}>
                     {detail.label} : <span>{detail.value}</span>
                   </li>

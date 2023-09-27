@@ -23,7 +23,7 @@ const Navbar =()=>{
   
   return (
     <div className={`${classes.nav_wrapper} ${theme ==='white' && classes.white_theme} ${theme ==='brown' && classes.brown_theme}`}> 
-    <h2 >Portfolio</h2>
+    <h2>EP</h2>
 <div className={classes.desktopnav}> <ul >
  <li> <Link href="#home">Home</Link> </li>
  <li> <Link href="#resume">Resume</Link> </li>

@@ -2,7 +2,7 @@
 export const mydetails = [
   {
     label: "Birth Date",
-    value: "Aug 2000",
+    value: "3 Aug",
   },
   {
     label: "Nationality",
@@ -11,6 +11,21 @@ export const mydetails = [
   {
     label: "Freelancing",
     value: "Available",
+  },
+];
+
+export const mydetails2 = [
+  {
+    label: "Address",
+    value: "Remote",
+  },
+  {
+    label: "Phone",
+    value: "+2349030257743",
+  },
+  {
+    label: "Email",
+    value: "promiseejiro43@gmail.com",
   },
 ];
 
