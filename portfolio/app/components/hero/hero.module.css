@@ -111,10 +111,9 @@
 }
 
 .hero_overlay h4 {
-  text-align: center;
   font-size: 22px;
   font-weight: 600;
-
+text-align: center;
 }
 
 .hero_overlay h4 span {
@@ -168,7 +167,6 @@
 
 
 .details li {
-  text-align: center;
   color: var(--gray-color);
   padding: 0.3rem 1rem;
   font-size:14px;

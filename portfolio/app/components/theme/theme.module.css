@@ -27,11 +27,11 @@
 }
 
 .item_1 div{
-background-color: var(--white-color);
+background-color: var(--blue-color);
 }
 
 .item_2 div{
-     background-color: var(--dark-color);
+     background-color: var(--success-color);
 }
 
 .item_3 div{

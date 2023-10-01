@@ -8,7 +8,29 @@ import classes from './project.module.css'
 const Projects = () => {
   let { theme } = useContext(ThemeContext);
   
-  const projects = [{}, {}, {},{}];
+  const projects = [
+    {
+    url:"",
+    url:"",
+    repo:"",
+    image:""
+  },
+    {
+    url:"",
+    repo:"",
+    image:""
+  },
+    {
+    url:"",
+    repo:"",
+    image:""
+  },
+    {
+    url:"",
+    repo:"",
+    image:""
+  }
+  ];
   return (
     <div className={`${classes.projects_section} ${theme ==="white" && classes.white_theme} ${theme ==="brown" && classes.brown_theme} `} id='project'>
      <SubHeader label='Projects'></SubHeader>

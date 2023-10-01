@@ -27,6 +27,7 @@ const Hero = () => {
     //     });
     //   }
   }, []);
+  
 
   const sliderRef = useRef();
   return (
@@ -52,12 +53,12 @@ const Hero = () => {
               style={{ height: `${height}px` }}
             >
               <h4>
-                Lets <span>Build.</span>
+                Hey <span>There!!!</span>
               </h4>
               <h4></h4>
             </div>
             <p>
-              Hello! I'm <span>Emosivbe promise</span>, a fullstack web
+              I'm <span>Emosivbe promise</span>, a fullstack web
               developer<span>.</span>
             </p>
           </div>
@@ -96,7 +97,7 @@ const Hero = () => {
             </div>
 
             <div className={classes.btn_container}>
-              <Link href="">Download CV</Link>
+              <a href="https://drive.google.com/file/d/1wPL3JGuKsQKiUXOJ2mxu9fKGXdoqKLCj/view?usp=drivesdk"download >Download CV</a>
             </div>
           </div>
         </div>
