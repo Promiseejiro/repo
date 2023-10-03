@@ -15,19 +15,19 @@ const Contacts =()=>{
   
   const links=[
     {
-      link:"he",
+      link:"https://twitter.com/Promiseejiro4",
       icon:<BsTwitter className={classes.contact_icons}/>
     },
     {
-      link:"he",
+      link:"https://www.linkedin.com/in/promiseejiro",
       icon:<BiLogoLinkedin className={classes.contact_icons}/>
     },
     {
-      link:"https://www.facebook.com/promise.emosivbe.98?mibextid=ZbWKwL",
+      link:"https://www.facebook.com/promise.emosivbe.98",
       icon:<BiLogoFacebook className={classes.contact_icons}/>
     },
     {
-      link:"https://github.com/",
+      link:"https://github.com/Promiseejiro",
       icon:<AiFillGithub className={classes.contact_icons}/>
     }
     

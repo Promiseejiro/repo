@@ -36,7 +36,7 @@ console.log(message)
         },
       }),
     })
-      .then((response: any) => {
+      .then((response) => {
         return response.json();
       })
       .then((data) => {

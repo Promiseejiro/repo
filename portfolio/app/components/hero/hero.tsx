@@ -9,7 +9,7 @@ import Theme from "../theme/theme";
 
 import classes from "./hero.module.css";
 
-import { mydetails } from "@/app/utils/data";
+import { mydetails,mydetails2 } from "@/app/utils/data";
 
 import profilepic from '../../../image/profile.png'
 interface heightProps {
@@ -17,6 +17,7 @@ interface heightProps {
 }
 const Hero = () => {
   let { theme } = useContext(ThemeContext);
+
 
   // const [height, setHeight] = useState<heightProps>();
   // useEffect(() => {
@@ -52,11 +53,12 @@ const Hero = () => {
               // style={{ height: `${height}px` }}
             >
               <h4>
-                Lets <span>Build.</span>
+                Hey <span>There!!!</span>
               </h4>
               <h4></h4>
             </div>
             <p>
+
               {`Hello! I'm `}<span>{`Emosivbe promise`}</span>{`, a fullstack web
               developer`}<span>{`.`}</span>
             </p>
@@ -87,7 +89,7 @@ const Hero = () => {
                 ))}
               </ul>
               <ul className={classes.second_ul}>
-                {mydetails.map((detail,index) => (
+                {mydetails2.map((detail,index) => (
                   <li key={index}>
                     {detail.label} : <span>{detail.value}</span>
                   </li>
@@ -96,7 +98,8 @@ const Hero = () => {
             </div>
 
             <div className={classes.btn_container}>
-              <Link href="">{`Download CV`}</Link>
+              <a href="https://drive.google.com/file/d/1wPL3JGuKsQKiUXOJ2mxu9fKGXdoqKLCj/view?usp=drivesdk"download >Download CV</a>
+
             </div>
           </div>
         </div>
