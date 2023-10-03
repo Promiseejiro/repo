@@ -36,7 +36,7 @@ const Contact = () => {
         <div className={`${classes.item} ${classes.full_width}`}>
           <div className={classes.card}>
           <MdLocationOn className={classes.icons} />
-            <h4>Location</h4>
+            <h4 className="m-0">Location</h4>
             <p>Remote</p>
           </div>
         </div>

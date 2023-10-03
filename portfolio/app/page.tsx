@@ -22,7 +22,7 @@ import classes from "./page.module.css";
 
 import { Poppins } from "next/font/google";
 
-export const poppins = Poppins({
+ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
 });
@@ -30,8 +30,7 @@ interface touchProp {
   x: Number;
   y: Number;
 }
-
-export default function Home() {
+ function Home() {
   let { theme } = useContext(ThemeContext);
 
   const [touchPoint, setTouchPoint] = useState<touchProp>({
@@ -83,3 +82,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home

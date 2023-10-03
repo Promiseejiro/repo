@@ -18,16 +18,16 @@ interface heightProps {
 const Hero = () => {
   let { theme } = useContext(ThemeContext);
 
-  const [height, setHeight] = useState<heightProps>();
-  useEffect(() => {
-    //   if (sliderRef.current) {
-    //     setHeight({
-    //       ...height,
-    //       height: sliderRef.current.getBoundingClientRect().height,
-    //     });
-    //   }
-  }, []);
-  
+
+  // const [height, setHeight] = useState<heightProps>();
+  // useEffect(() => {
+  //     if (sliderRef.current) {
+  //       setHeight({
+  //         ...height,
+  //         height: sliderRef.current.getBoundingClientRect().height,
+  //       });
+  //     }
+  // }, []);
 
   const sliderRef = useRef();
   return (
@@ -50,7 +50,7 @@ const Hero = () => {
             </div>
             <div
               className={classes.hero_section_head}
-              style={{ height: `${height}px` }}
+              // style={{ height: `${height}px` }}
             >
               <h4>
                 Hey <span>There!!!</span>
@@ -58,8 +58,9 @@ const Hero = () => {
               <h4></h4>
             </div>
             <p>
-              I'm <span>Emosivbe promise</span>, a fullstack web
-              developer<span>.</span>
+
+              {`Hello! I'm `}<span>{`Emosivbe promise`}</span>{`, a fullstack web
+              developer`}<span>{`.`}</span>
             </p>
           </div>
         </div>
@@ -75,9 +76,9 @@ const Hero = () => {
 
           <div className={classes.content} id="resume">
             <p className={classes.discription}>
-              I'm Emosivbe promise. A tech savant with mastery of contemporary
+             {` I'm Emosivbe promise. A tech savant with mastery of contemporary
               tools and technologies, fashioning software solutions that
-              prioritize seamless user experiences and improve lives.
+              prioritize seamless user experiences and improve lives.`}
             </p>
             <div className={classes.ul_container}>
               <ul className={classes.first_ul}>
@@ -98,6 +99,7 @@ const Hero = () => {
 
             <div className={classes.btn_container}>
               <a href="https://drive.google.com/file/d/1wPL3JGuKsQKiUXOJ2mxu9fKGXdoqKLCj/view?usp=drivesdk"download >Download CV</a>
+
             </div>
           </div>
         </div>
