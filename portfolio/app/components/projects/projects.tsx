@@ -11,7 +11,6 @@ const Projects = () => {
   const projects = [
     {
     url:"",
-    url:"",
     repo:"",
     image:""
   },
