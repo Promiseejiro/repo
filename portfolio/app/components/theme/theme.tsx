@@ -5,8 +5,8 @@ import classes from './theme.module.css'
 
 const Theme =()=>{
 const themes =[
+     'black',
      'white',
-     'black'
 ]
 
      let { theme,changeTheme } = useContext(ThemeContext);
@@ -21,12 +21,12 @@ changeTheme(currentTheme)
                <div className={classes.container}>
                <div className={`${
                    classes.item} ${classes.item_1}`} onClick={()=>{
-                     changeHandler("white")
+                     changeHandler("dark")
                    }}>
                     <div></div>
                </div>
                <div className={`${classes.item} ${classes.item_2}`} onClick={()=>{
-                     changeHandler("dark")
+                     changeHandler("white")
                    }}>
                     <div></div>
                </div>
