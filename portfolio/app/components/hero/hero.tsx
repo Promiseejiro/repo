@@ -84,7 +84,7 @@ const Hero = () => {
               <ul className={classes.first_ul}>
                 {mydetails.map((detail,index) => (
                   <li key={index}>
-                    {detail.label} : <span>{detail.value}</span>
+                  <p>  {detail.label} : </p><span> {detail.value}</span>
                   </li>
                 ))}
               </ul>

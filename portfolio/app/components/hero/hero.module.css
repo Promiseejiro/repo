@@ -171,6 +171,9 @@ text-align: center;
   padding: 0.3rem 1rem;
   font-size:14px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+justify-content: center;
 }
 
 
@@ -284,6 +287,10 @@ text-align: center;
 
   .ul_container ul {
     margin-right: 4rem;
+  }
+
+  .ul_container li{
+   justify-content: flex-start;
   }
 
   .details .btn_container {
