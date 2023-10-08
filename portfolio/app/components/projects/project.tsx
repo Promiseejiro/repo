@@ -33,17 +33,14 @@ const Project = ({ obj }: PropObject) => {
       </div>
       <h4>{obj.name}</h4>
       <div className={clasess.link_container}>
-        {links.map((link, index) => (
-          <button
-            key={index}
-            className={`${clasess.project_btn} ${
-              link === current && clasess.active_btn
-            }`}
-            onClick={() => setCurrent(link)}
-          >
-            {link}
-          </button>
-        ))}
+        {/* {links.map((link, index) => ( */}
+        <Link className={`${clasess.project_btn}`} href={`${obj.repo}`}>
+          Repo
+        </Link>
+        <Link className={`${clasess.project_btn}`} href={`${obj.url}`}>
+          Live
+        </Link>
+        {/* ))} */}
       </div>
     </div>
   );
