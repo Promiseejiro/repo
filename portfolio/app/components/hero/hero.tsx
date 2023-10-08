@@ -37,7 +37,7 @@ const Hero = () => {
       }`}
     >
       <div className={`${classes.hero_section}`} id="home">
-        <Image src={profilepic} alt="profile"/>
+        <Image src={profilepic} alt="profile" className={classes.my_image}/>
         <div className={classes.hero_overlay}>
           <div className={classes.border_container}>
             <div className={`${classes.box} ${classes.top_left}`}></div>
@@ -53,7 +53,7 @@ const Hero = () => {
               // style={{ height: `${height}px` }}
             >
               <h4>
-                Hey <span>There!!!</span>
+                Building Technical <span>Solution!!!</span>
               </h4>
               <h4></h4>
             </div>

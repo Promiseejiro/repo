@@ -7,6 +7,7 @@
 .hero_section img{
   width:100%;
   height: auto;
+  display: block;
 }
 
 .hero_overlay {
@@ -200,7 +201,6 @@ justify-content: center;
 .details .discription {
   margin: 1rem 1rem;
   color:var(--gray-color);
-  text-align: center;
   font-weight: 500;
   font-size: 16px;
 }
@@ -242,6 +242,10 @@ justify-content: center;
 }
 
 @media (min-width: 700px) {
+.hero_section{
+  height: auto;
+}
+
 .hero_overlay{
   padding: 5rem 2rem 1rem 2rem;
 }

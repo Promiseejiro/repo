@@ -1,43 +1,55 @@
-import {useContext} from "react"
+import { useContext } from "react";
 import { ThemeContext } from "../../../context/themecontext";
 
 import Project from "./project";
 import SubHeader from "../subHeading/subheading";
-
-import classes from './project.module.css'
+import comment from "../../../image/comment_section.jpg";
+import ecomance from "../../../image/ecomance.jpg";
+import rerha from "../../../image/rerha.jpg";
+import cbt from "../../../image/cbt.jpg";
+import classes from "./project.module.css";
 const Projects = () => {
   let { theme } = useContext(ThemeContext);
-  
+
   const projects = [
     {
-    url:"",
-    repo:"",
-    image:""
-  },
+      url: "https://reach-murex.vercel.app/",
+      repo: "https://github.com/Promiseejiro/Reach",
+      image: rerha,
+      name: "RerhaDp",
+    },
     {
-    url:"",
-    repo:"",
-    image:""
-  },
+      url: "",
+      repo: "https://github.com/Promiseejiro/easyCBT",
+      image: cbt,
+      name: "EasyCBT",
+    },
     {
-    url:"",
-    repo:"",
-    image:""
-  },
+      url: "https://sneaker-ecomance-project.vercel.app",
+      repo: "https://github.com/Promiseejiro/sneaker-Ecomance-project",
+      image: ecomance,
+      name: "Sneaker Ecomance",
+    },
     {
-    url:"",
-    repo:"",
-    image:""
-  }
+      url: "https://comment-section-rho.vercel.app/",
+      repo: "https://github.com/Promiseejiro/comment-section",
+      image: comment,
+      name: "Comment section",
+    },
   ];
   return (
-    <div className={`${classes.projects_section} ${theme ==="white" && classes.white_theme} ${theme ==="brown" && classes.brown_theme} `} id='project'>
-     <SubHeader label='Projects'></SubHeader>
-    <div className={classes.card_container}>
-      {projects.map((projects,index) => (
-        <Project key={index}></Project>
-      ))}
-    </div>
+    <div
+      className={`${classes.projects_section} ${
+        theme === "white" && classes.white_theme
+      } ${theme === "brown" && classes.brown_theme} `}
+      id="project"
+    >
+      <SubHeader label="Projects"></SubHeader>
+      <div className={classes.card_container}>
+        {projects.map((projects, index) => (
+          <Project key={index} obj={projects}></Project>
+        ))}
+      </div>
     </div>
   );
 };
