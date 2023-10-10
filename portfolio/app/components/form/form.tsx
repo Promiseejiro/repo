@@ -26,7 +26,8 @@ setMessage({...message,[e.target.name]:e.target.value})
 console.log(message)
   };
  
-  const handleSubmit = () => {
+  const handleSubmit = (e:any) => {
+    e.preventDefault()
     fetch("../../api/hire", {
       method: "POST",
       body: JSON.stringify({
@@ -41,17 +42,9 @@ console.log(message)
       })
       .then((data) => {
         console.log(data);
+        alert(data)
       });
   };
-  useEffect(() => {
-    fetch("../../api/message")
-      .then((response: any) => {
-        return response.json();
-      })
-      .then((data) => {
-        console.log(data);
-      });
-  }, []);
 
   return (
     <div
