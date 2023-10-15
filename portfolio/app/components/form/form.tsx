@@ -12,26 +12,40 @@ interface messageContent {
   email: String;
   name: String;
   message: String;
+  response: any;
 }
 const Form = () => {
   const [message, setMessage] = useState<messageContent>({
     email: "",
     name: "",
     message: "",
+    response: "",
   });
+
   let { theme } = useContext(ThemeContext);
 
   const onChangeHandler = (e: any) => {
-setMessage({...message,[e.target.name]:e.target.value})
-console.log(message)
+    setMessage({ ...message, [e.target.name]: e.target.value });
   };
- 
-  const handleSubmit = (e:any) => {
-    e.preventDefault()
+
+  const closeAlert = () => {
+    setTimeout(() => {
+      setMessage({
+        ...message,
+        response: "",
+        email: "",
+        name: "",
+        message: "",
+      });
+    }, 3000);
+  };
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
     fetch("../../api/hire", {
       method: "POST",
       body: JSON.stringify({
-      message,
+        message,
         Headers: {
           "Content-Type": "application/json",
         },
@@ -42,7 +56,13 @@ console.log(message)
       })
       .then((data) => {
         console.log(data);
-        alert(data)
+        setMessage({ ...message, response: data.message });
+        closeAlert();
+      })
+
+      .catch((error) => {
+        setMessage({ ...message, response: error.message });
+        closeAlert();
       });
   };
 
@@ -53,15 +73,22 @@ console.log(message)
       }`}
     >
       <SubHeader label="Hire me"></SubHeader>
+      {message.response && (
+        <div className={classes.alert}>{message.response}</div>
+      )}
       <form onSubmit={handleSubmit}>
         <div className={classes.form_controller}>
-          <input placeholder="Name" onChange={onChangeHandler} name='name'/>
+          <input placeholder="Name" onChange={onChangeHandler} name="name" />
         </div>
         <div className={classes.form_controller}>
-          <input placeholder="Email" onChange={onChangeHandler} name='email' />
+          <input placeholder="Email" onChange={onChangeHandler} name="email" />
         </div>
         <div className={classes.form_controller}>
-          <textarea placeholder="message" onChange={onChangeHandler} name='message'></textarea>
+          <textarea
+            placeholder="message"
+            onChange={onChangeHandler}
+            name="message"
+          ></textarea>
         </div>
         <div className={classes.form_controller}>
           <input

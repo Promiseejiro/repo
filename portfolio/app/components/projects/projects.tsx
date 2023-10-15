@@ -13,7 +13,7 @@ const Projects = () => {
 
   const projects = [
     {
-      url: "https://reach-murex.vercel.app/",
+      url: "https://rerhadp.vercel.app/",
       repo: "https://github.com/Promiseejiro/Reach",
       image: rerha,
       name: "RerhaDp",

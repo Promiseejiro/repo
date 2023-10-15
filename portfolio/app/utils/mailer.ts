@@ -1,18 +1,18 @@
 import nodemailer from "nodemailer"
-const Mailer =async(email: string)=>{
+const Mailer =async(email: string,personsMessage:string)=>{
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'promiseejiro43@gmail.com',
-    pass: 'gufmbtoghpjswmye'
+    pass: 'idfrnbyhlpojilqn'
   }
 });
+
  let message =await {
    from: "promiseejiro43@gmail.com", 
   to: "promiseemosivbe43@gmail.com" ,
   subject: "Someone sent a message from your portfolio",
-  html:`<h1>Welcome </h1><p>That was easy!</p>
-  <p>${url}</p>`
+  html:personsMessage
 };
 transporter.sendMail(message, function(error:any, info:any){
   if (error) {

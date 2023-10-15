@@ -7,7 +7,6 @@
   border: 0.1px solid var(--border-color);
 }
 
-
 .form .form_controller {
   margin: 2rem;
 }
@@ -22,6 +21,14 @@
   color: var(--white-color);
 }
 
+.white_theme .form_controller input {
+  color: var(--dark-color);
+}
+
+.brown_theme .form_controller input {
+  color: var(--dark-color);
+}
+
 .form_controller textarea {
   display: block;
   width: 100%;
@@ -30,8 +37,8 @@
   padding: 0.5rem 0 1rem 0;
   background-color: transparent;
   height: 7rem;
+  color: var(--white-color);
 }
-
 
 .form_controller input:placeholder {
   color: var(--gray-color);
@@ -48,15 +55,35 @@
   margin: auto;
 }
 
-.white_theme  .form_controller .submit{
-  border:2px solid var(--success-color);
+.white_theme .form_controller .submit {
+  border: 2px solid var(--success-color);
   background-color: var(--success-color);
 }
 
-.brown_theme  .form_controller .submit{
-  border:2px solid var(--brown-color);
+.brown_theme .form_controller .submit {
+  border: 2px solid var(--brown-color);
   background-color: var(--brown-color);
-  color:var(--dark-color);
+  color: var(--dark-color);
+}
+
+.white_theme .form_controller textarea {
+  color: var(--dark-color);
+}
+
+.brown_theme .form_controller textarea {
+  color: var(--dark-color);
+}
+
+.alert {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  padding: 1rem;
+}
+
+.brown_theme .alert,
+.white_theme .alert {
+  background-color: rgba(0, 255, 10, 0.4);
+  color: var(--dark-color);
 }
 
 @media (min-width: 700px) {
