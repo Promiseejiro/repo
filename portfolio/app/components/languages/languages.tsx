@@ -9,7 +9,7 @@ const Languages=()=>{
   let { theme } = useContext(ThemeContext);
      return(
           <div className={`${classes.languages} ${theme==="white" && classes.white_theme}  ${theme ==="brown" && classes.brown_theme}`}>
-               <SubHeader label={`Language`}></SubHeader>
+               <SubHeader label={`Languages`}></SubHeader>
           <div className={classes.card}>
             <div className={classes.item1}>
               <span>2 Yrs</span>
