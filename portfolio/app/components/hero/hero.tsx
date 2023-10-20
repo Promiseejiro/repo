@@ -99,7 +99,6 @@ const Hero = () => {
 
             <div className={classes.btn_container}>
               <a href="https://drive.google.com/file/d/1wPL3JGuKsQKiUXOJ2mxu9fKGXdoqKLCj/view?usp=drivesdk"download >Download CV</a>
-
             </div>
           </div>
         </div>

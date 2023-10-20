@@ -230,6 +230,10 @@
   text-align: center;
 }
 
+.details a:hover{
+  opacity: .8;
+}
+
 .white_theme .details a {
   border: var(--success-color) 2px solid;
   background-color: var(--success-color);
