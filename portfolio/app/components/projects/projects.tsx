@@ -19,7 +19,7 @@ const Projects = () => {
       name: "RerhaDp",
     },
     {
-      url: "",
+      url: "https://easycbt.vercel.app/",
       repo: "https://github.com/Promiseejiro/easyCBT",
       image: cbt,
       name: "EasyCBT",

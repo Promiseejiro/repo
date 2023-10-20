@@ -26,9 +26,12 @@ const Project = ({ obj }: PropObject) => {
   return (
     <div className={clasess.card}>
       <div className={clasess.image}>
-        <div className={clasess.overlay}>
-          <BiLink className={clasess.link_icon} />
-        </div>
+        <Link href={`${obj.url}`}>
+          <div className={clasess.overlay}>
+            <BiLink className={clasess.link_icon} />
+          </div>
+        </Link>
+
         <Image src={obj.image} alt="Picture of the author" />
       </div>
       <h4>{obj.name}</h4>
