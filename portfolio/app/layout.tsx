@@ -1,9 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import ThemeProvider from '../context/themecontext'
- 
-import { Inter } from 'next/font/google'
-const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Emosivbe Promise',
   description: `I'm Emosivbe promise. A tech savant with mastery of contemporary

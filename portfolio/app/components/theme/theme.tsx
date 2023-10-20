@@ -17,19 +17,19 @@ changeTheme(currentTheme)
      return(
 
           <div className={classes.theme_container}>
-               <span>Themes</span>
+               {/* <span>Themes</span> */}
                <div className={classes.container}>
-               <div className={`${
+               {/* <div className={`${
                    classes.item} ${classes.item_1}`} onClick={()=>{
                      changeHandler("dark")
                    }}>
                     <div></div>
-               </div>
-               <div className={`${classes.item} ${classes.item_2}`} onClick={()=>{
+               </div> */}
+               {/* <div className={`${classes.item} ${classes.item_2}`} onClick={()=>{
                      changeHandler("white")
                    }}>
                     <div></div>
-               </div>
+               </div> */}
                <div className={`${classes.item} ${classes.item_3}`} onClick={()=>{
                      changeHandler("brown")
                    }}>
