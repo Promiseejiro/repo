@@ -59,7 +59,7 @@ const Hero = () => {
             </div>
             <p>
 
-              {`Hello! I'm `}<span>{`Emosivbe promise`}</span>{`, a fullstack web
+              {`Hello, I'm `}<span>{`Emosivbe promise`}</span>{`, a fullstack web
               developer`}<span>{`.`}</span>
             </p>
           </div>

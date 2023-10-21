@@ -1,0 +1,36 @@
+.container {
+  display: none;
+  position: fixed;
+  left: 2.2rem;
+  bottom: 4rem;
+}
+
+.list li p {
+  color: var(--gray-color);
+}
+
+.list li p span {
+  color: var(--blue-color);
+}
+
+.brown_theme .list li p {
+  color: var(--dark-color);
+}
+
+.brown_theme .list li span {
+  color: var(--brown-color);
+}
+
+.white_theme .list li p {
+  color: var(--dark-color);
+}
+
+.white_theme .list li span {
+  color: var(--success-color);
+}
+
+@media (min-width: 1400px) {
+  .container {
+    display: block;
+  }
+}

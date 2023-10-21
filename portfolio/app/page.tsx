@@ -1,9 +1,7 @@
 "use client";
 import { ThemeContext } from "../context/themecontext";
 import { useContext, useState } from "react";
-import Image from "next/image";
-import Head from "next/head";
-import Link from "next/link";
+import Comment from "postcss/lib/comment";
 import Navbar from "./components/navbar/navbar";
 import Hero from "./components/hero/hero";
 import Service from "./components/services/services";
@@ -21,8 +19,9 @@ import Scroll from "./components/scrolldetector/sroolldetector";
 import classes from "./page.module.css";
 
 import { Poppins } from "next/font/google";
+import Connect from "./components/leftcomponent/connect";
 
- const poppins = Poppins({
+const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
 });
@@ -30,7 +29,7 @@ interface touchProp {
   x: Number;
   y: Number;
 }
- function Home() {
+function Home() {
   let { theme } = useContext(ThemeContext);
 
   const [touchPoint, setTouchPoint] = useState<touchProp>({
@@ -42,12 +41,12 @@ interface touchProp {
     var y = e.clientY;
     setTouchPoint({
       ...touchPoint,
-      x: x -3,
-      y: y-3,
+      x: x - 3,
+      y: y - 3,
     });
   };
   return (
-    <div   onMouseMove={mouseMove}>
+    <div onMouseMove={mouseMove}>
       <div
         className={`${classes.main_container}   ${poppins.className}  ${
           theme === "white" && classes.white_theme
@@ -78,9 +77,11 @@ interface touchProp {
         <Contact></Contact>
 
         <Form></Form>
+        
+        <Connect></Connect>
       </div>
     </div>
   );
 }
 
-export default Home
+export default Home;

@@ -55,6 +55,10 @@
   margin: auto;
 }
 
+.form .form_controller .submit:hover {
+  border-radius: 25px;
+}
+
 .white_theme .form_controller .submit {
   border: 2px solid var(--success-color);
   background-color: var(--success-color);

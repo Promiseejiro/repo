@@ -9,6 +9,16 @@ const Expirence =()=>{
   let { theme } = useContext(ThemeContext);
   
      const experiences = [
+      {
+        date: "May 2022 - Present",
+        heading: "Lead developer easyCBT",
+        text: "Fullstack developer of easyCBT. A  CBT tool use to create, solve, download answers. Boost confidence, ace your exams. 📚✅ #Success",
+      },
+      {
+        date: "May 2022 - Present",
+        heading: "RERHA Publicity tool",
+        text: "Fullstack developer at RERHA. that helps Streamline customer interactions, enhance relationships. Your ultimate CRM solution for growth and satisfaction. Elevate engagement effortlessly."
+      },
           {
             date: "May 2020 - Present",
             heading: "Google developer student club",
@@ -19,16 +29,7 @@ const Expirence =()=>{
             heading: "Yarsh Edutech",
             text: "Frontend developer at Yarsh.com an edutech company that helps students with updated resources, hostel search, rides, and seamless campus life experiences through Tech."
           },
-          {
-            date: "May 2022 - Present",
-            heading: "Lead developer easyCBT",
-            text: "Fullstack developer of easyCBT. A  CBT tool use to create, solve, download answers. Boost confidence, ace your exams. 📚✅ #Success",
-          },
-          {
-            date: "May 2022 - Present",
-            heading: "RERHA Publicity tool",
-            text: "Fullstack developer at RERHA. that helps Streamline customer interactions, enhance relationships. Your ultimate CRM solution for growth and satisfaction. Elevate engagement effortlessly."
-          },
+        
         ];
      return(
           <div className={`${classes.expirence_section} ${theme ==="white" && classes.white_theme } ${theme ==="brown" && classes.brown_theme}`}>
