@@ -4,7 +4,7 @@
 
 .card_container {
   display: block;
-  border: .1px solid var(--border-color);
+  border: 0.1px solid var(--border-color);
   padding: 1rem;
 }
 
@@ -25,7 +25,7 @@
   height: auto;
 }
 
-.projects_section .card .overlay{
+.projects_section .card .overlay {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,16 +35,15 @@
   width: 100%;
   height: 100%;
   z-index: 2;
-  background-color: rgba(0, 0, 0, .6); 
+  background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
 }
 
-.projects_section .card .overlay:hover  {
-opacity: 1;
+.projects_section .card .overlay:hover {
+  opacity: 1;
 }
 
-
-.link_icon{
+.link_icon {
   font-size: 30px;
   font-weight: 500;
   color: var(--dark-color);
@@ -56,11 +55,15 @@ opacity: 1;
   color: var(--white-color);
   text-align: center;
   padding: 0.1rem 0;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
-.white_theme .card h4{
-  color:var(--dark-color);
+.white_theme .card h4 {
+  color: var(--dark-color);
+}
+
+.brown_theme .card h4 {
+  color: var(--dark-color);
 }
 
 .link_container {
@@ -79,12 +82,12 @@ opacity: 1;
   text-decoration: none;
 }
 
-.white_theme .project_btn{
-  color:var(--dark-color);
+.white_theme .project_btn {
+  color: var(--dark-color);
 }
 
-.brown_theme .project_btn{
-  color:var(--dark-color);
+.brown_theme .project_btn {
+  color: var(--dark-color);
 }
 
 .active_btn {

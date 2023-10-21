@@ -222,16 +222,18 @@
 }
 
 .details a {
-  border: 2px solid var(--blue-color);
+  /* border: 2px solid var(--blue-color); */
   background-color: var(--blue-color);
   color: var(--white-color);
   font-weight: 500;
   padding: 0.5rem 2rem;
   text-align: center;
+  border: 1px solid var(--dark-color);
 }
 
 .details a:hover{
-  opacity: .8;
+  /* opacity: .8; */
+  border-radius: 25px;
 }
 
 .white_theme .details a {
@@ -284,10 +286,9 @@
     text-align: left;
   }
 
-  .discription {
+ .details  .discription {
     padding: 1rem 0;
-    display: flex;
-    text-align: start;
+    text-align: left;
    
   }
 

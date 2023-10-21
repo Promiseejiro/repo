@@ -15,7 +15,7 @@ export const ThemeContext = createContext<ContextProps>({
 })
  
 export default function ThemeProvider({ children }:any) {
- const [theme,setTheme] =useState<String>("brown")
+ const [theme,setTheme] =useState<String>("white")
 
 const changeTheme=(currentTheme:String)=>{
 setTheme(currentTheme)

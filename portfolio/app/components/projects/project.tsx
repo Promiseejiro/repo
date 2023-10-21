@@ -31,12 +31,12 @@ const Project = ({ obj }: PropObject) => {
             <BiLink className={clasess.link_icon} />
           </div>
         </Link>
-
         <Image src={obj.image} alt="Picture of the author" />
       </div>
       <h4>{obj.name}</h4>
       <div className={clasess.link_container}>
         {/* {links.map((link, index) => ( */}
+        {/* <h5>{obj.name}</h5> */}
         <Link className={`${clasess.project_btn}`} href={`${obj.repo}`}>
           Repo
         </Link>
