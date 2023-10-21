@@ -24,7 +24,7 @@ const Connect = () => {
     >
       <ul className={classes.list}>
         {connect.map((con: any, index: number) => (
-          <li>
+          <li key={index}>
             <p>
               <span> {con.name}</span>:{con.value}
             </p>
