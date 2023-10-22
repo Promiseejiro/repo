@@ -77,16 +77,32 @@
   font-weight: 500;
   color: var(--gray-color);
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.3rem 0.6rem;
   border-bottom: 0.5px solid var(--border-color);
   text-decoration: none;
+  margin-top: 0.4rem;
+}
+
+.project_btn:hover {
+  background-color: var(--blue-color);
+  color: var(--white-color);
 }
 
 .white_theme .project_btn {
   color: var(--dark-color);
 }
 
+.white_theme .project_btn:hover {
+  background-color: var(--success-color);
+  color: var(--white-color);
+}
+
 .brown_theme .project_btn {
+  color: var(--dark-color);
+}
+
+.brown_theme .project_btn:hover {
+  background-color: var(--brown-color);
   color: var(--dark-color);
 }
 
