@@ -26,7 +26,9 @@ const Connect = () => {
         {connect.map((con: any, index: number) => (
           <li key={index}>
             <p>
-              <span> {con.name}</span>:{con.value}
+              <span> {con.name}</span>
+              {` : `}
+              {con.value}
             </p>
           </li>
         ))}

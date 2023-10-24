@@ -149,29 +149,21 @@
   padding: 0.3rem 1rem;
 }
 
-.desktopnav li:hover {
+
+.desktopnav li a:hover {
   background-color: var(--blue-color);
   color: var(--white-color);
 }
 
-.desktopnav li a:hover {
-  color: var(--white-color);
-}
-
-.white_theme .desktopnav li:hover {
-  background-color: var(--success-color);
-}
-
 .white_theme .desktopnav li a:hover {
+  background-color: var(--success-color);
   color: var(--white-color);
 }
 
-.brown_theme .desktopnav li:hover {
-  background-color: var(--brown-color);
-  color: var(--dark-color);
-}
+
 
 .brown_theme .desktopnav li a:hover {
+  background-color: var(--brown-color);
   color: var(--dark-color);
 }
 

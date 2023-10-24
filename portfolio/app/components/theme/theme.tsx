@@ -25,16 +25,16 @@ changeTheme(currentTheme)
                    }}>
                     <div></div>
                </div> */}
-               {/* <div className={`${classes.item} ${classes.item_2}`} onClick={()=>{
+               <div className={`${classes.item} ${classes.item_2}`} onClick={()=>{
                      changeHandler("white")
                    }}>
                     <div></div>
-               </div> */}
-               <div className={`${classes.item} ${classes.item_3}`} onClick={()=>{
+               </div>
+               {/* <div className={`${classes.item} ${classes.item_3}`} onClick={()=>{
                      changeHandler("brown")
                    }}>
                     <div></div>
-               </div>
+               </div> */}
                </div>
              
           </div>
