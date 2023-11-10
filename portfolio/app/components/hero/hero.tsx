@@ -9,15 +9,15 @@ import Theme from "../theme/theme";
 
 import classes from "./hero.module.css";
 
-import { mydetails,mydetails2 } from "@/app/utils/data";
+import { mydetails, mydetails2 } from "@/app/utils/data";
 
-import profilepic from '../../../image/profile.png'
+import profilepic from "../../../image/profile.png";
+import hello from "../../../image/hello2.png";
 interface heightProps {
   height: String;
 }
 const Hero = () => {
   let { theme } = useContext(ThemeContext);
-
 
   // const [height, setHeight] = useState<heightProps>();
   // useEffect(() => {
@@ -37,7 +37,8 @@ const Hero = () => {
       }`}
     >
       <div className={`${classes.hero_section}`} id="home">
-        <Image src={profilepic} alt="profile" className={classes.my_image}/>
+        <Image src={hello} alt="profile" className={classes.my_image} />
+        <div className={classes.animation_box}></div>
         <div className={classes.hero_overlay}>
           <div className={classes.border_container}>
             <div className={`${classes.box} ${classes.top_left}`}></div>
@@ -58,9 +59,11 @@ const Hero = () => {
               <h4></h4>
             </div>
             <p>
-
-              {`Hello, I'm `}<span>{`Emosivbe promise`}</span>{`, a fullstack web
-              developer`}<span>{`.`}</span>
+              {`Hello, I'm `}
+              <span>{`Emosivbe promise`}</span>
+              {`, a fullstack web
+              developer`}
+              <span>{`.`}</span>
             </p>
           </div>
         </div>
@@ -70,26 +73,28 @@ const Hero = () => {
           <div>
             <Image
               className={classes.detailes_image}
-              src={profilepic} alt="profile"
-              />
+              src={profilepic}
+              alt="profile"
+            />
           </div>
 
           <div className={classes.content} id="resume">
             <p className={classes.discription}>
-             {` I'm Emosivbe promise. A tech savant with mastery of contemporary
+              {` I'm Emosivbe promise. A tech savant with mastery of contemporary
               tools and technologies, fashioning software solutions that
               prioritize seamless user experiences and improve lives.`}
             </p>
             <div className={classes.ul_container}>
               <ul className={classes.first_ul}>
-                {mydetails.map((detail,index) => (
+                {mydetails.map((detail, index) => (
                   <li key={index}>
-                  <p>  {detail.label} : </p><span> {detail.value}</span>
+                    <p> {detail.label} : </p>
+                    <span> {detail.value}</span>
                   </li>
                 ))}
               </ul>
               <ul className={classes.second_ul}>
-                {mydetails2.map((detail,index) => (
+                {mydetails2.map((detail, index) => (
                   <li key={index}>
                     {detail.label} : <span>{detail.value}</span>
                   </li>
@@ -98,7 +103,12 @@ const Hero = () => {
             </div>
 
             <div className={classes.btn_container}>
-              <a href="https://drive.google.com/file/d/1wPL3JGuKsQKiUXOJ2mxu9fKGXdoqKLCj/view?usp=drivesdk"download >Download CV</a>
+              <a
+                href="https://drive.google.com/file/d/1wPL3JGuKsQKiUXOJ2mxu9fKGXdoqKLCj/view?usp=drivesdk"
+                download
+              >
+                Download CV
+              </a>
             </div>
           </div>
         </div>
