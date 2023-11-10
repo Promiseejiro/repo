@@ -3,6 +3,7 @@
   position: fixed;
   left: 2.2rem;
   bottom: 4rem;
+  z-index: 3;
 }
 
 .list li p {
