@@ -6,12 +6,13 @@
   display: block;
   border: 0.1px solid var(--border-color);
   padding: 1rem;
+  gap: 1rem;
 }
 
 .projects_section .card {
   display: flex;
   flex-direction: column;
-  margin: 1rem 0;
+  padding: 1rem 0;
 }
 
 .projects_section .card .image {
