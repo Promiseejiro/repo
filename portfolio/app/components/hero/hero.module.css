@@ -28,10 +28,11 @@
   height: 100%;
   width: 100%;
   z-index: 3;
+ 
 }
 
 .white_theme .hero_overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .animation_box {
@@ -44,6 +45,7 @@
   animation: moveRight 4s linear infinite;
   animation-delay: -1s;
   z-index: 2;
+ 
 }
 
 @keyframes moveRight {
@@ -86,6 +88,7 @@
   padding: 1rem;
   position: relative;
   z-index: 3;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .white_theme .border_container {
@@ -132,12 +135,13 @@
 .hero_overlay h1,
 .hero_overlay h4 {
   color: var(--dark-color);
+  /* padding: 1rem; */
 }
 
 .white_theme .hero_overlay p,
 .white_theme .hero_overlay h1,
 .white_theme .hero_overlay h4 {
-  color: var(--dark-color);
+  color: var(--success-color);
 }
 
 .brown_theme .hero_overlay p,
@@ -177,7 +181,7 @@
 }
 
 .white_theme .hero_overlay h4 span {
-  color: var(--success-color);
+  color: var(--dark-color);
 }
 
 .brown_theme .hero_overlay h4 span {

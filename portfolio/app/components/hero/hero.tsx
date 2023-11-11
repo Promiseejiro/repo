@@ -47,7 +47,7 @@ const Hero = () => {
             <div className={`${classes.box} ${classes.bottom_right}`}></div>
 
             <div className={classes.theme_container}>
-              <Theme></Theme>
+              {/* <Theme></Theme> */}
             </div>
             <div
               className={classes.hero_section_head}
