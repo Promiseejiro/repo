@@ -141,7 +141,7 @@
 .white_theme .hero_overlay p,
 .white_theme .hero_overlay h1,
 .white_theme .hero_overlay h4 {
-  color: var(--success-color);
+  color: var(--dark-color);
 }
 
 .brown_theme .hero_overlay p,
@@ -181,7 +181,7 @@
 }
 
 .white_theme .hero_overlay h4 span {
-  color: var(--dark-color);
+  color: var(--success-color);
 }
 
 .brown_theme .hero_overlay h4 span {
