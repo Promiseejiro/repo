@@ -101,10 +101,9 @@ const Hero = () => {
                 ))}
               </ul>
             </div>
-
             <div className={classes.btn_container}>
               <a
-                href="https://drive.google.com/file/d/1wPL3JGuKsQKiUXOJ2mxu9fKGXdoqKLCj/view?usp=drivesdk"
+                href="https://drive.google.com/file/d/1N0G6Bin1h4TdLa5-xqtsc1Auv2pzVG9b/view?usp=sharing"
                 download
               >
                 Download CV
