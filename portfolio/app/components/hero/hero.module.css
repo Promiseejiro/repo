@@ -42,13 +42,13 @@
   top: 5rem;
   left: 0;
   background-color: var(--white-color);
-  animation: moveRight 4s linear infinite;
+  /* animation: moveRight 4s linear infinite; */
   animation-delay: -1s;
   z-index: 2;
  
 }
 
-@keyframes moveRight {
+/* @keyframes moveRight {
   0% {
     left: 0%;
   }
@@ -76,7 +76,7 @@
   100% {
     left: 100%;
   }
-}
+} */
 
 .border_container {
   height: 100%;
@@ -171,8 +171,8 @@
 }
 
 .hero_overlay h4 {
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 40px;
+  font-weight: 900;
   text-align: center;
 }
 
@@ -320,8 +320,9 @@
   }
 
   .hero_overlay h4 {
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 70px;
+    font-weight: 900;
+    text-align: center;
   }
 
   .hero_overlay {
