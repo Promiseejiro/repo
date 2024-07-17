@@ -1,4 +1,5 @@
 import { useRef, useEffect, useState, useContext } from "react";
+import { motion } from "framer-motion";
 
 import { ThemeContext } from "../../../context/themecontext";
 
@@ -49,14 +50,31 @@ const Hero = () => {
             <div className={classes.theme_container}>
               {/* <Theme></Theme> */}
             </div>
-            <div
-              className={classes.hero_section_head}
-              // style={{ height: `${height}px` }}
-            >
-              <h4>
-                Building Technical <span>Solution!!!</span>
-              </h4>
-              <h4></h4>
+            <div className={classes.hero_section_head}>
+              <motion.div
+                initial={{ x: 2000, y: 0, rotate: 0 }}
+                animate={{ x: -2000, y: 0, rotate: 0 }}
+                exit={{ x: -2000, y: 0, rotate: 0 }}
+                transition={{ ease: "easeOut", duration: 2 }}
+              >
+                <div className={classes.line}></div>
+              </motion.div>
+              <motion.div
+                className="box"
+                transition={{ ease: "easeOut", duration: 2 }}
+              >
+                <h4>
+                  Building Technical <span>Solution!!!</span>
+                </h4>
+              </motion.div>
+              <motion.div
+                initial={{ x: -2000, y: 0, rotate: 0 }}
+                animate={{ x: 2000, y: 0, rotate: 0 }}
+                exit={{ x: -2000, y: 0, rotate: 0 }}
+                transition={{ ease: "easeOut", duration: 2 }}
+              >
+                <div className={classes.line}></div>
+              </motion.div>
             </div>
             <p>
               {`Hello, I'm `}
