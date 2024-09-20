@@ -10,7 +10,7 @@ const Expirence =()=>{
   
      const experiences = [
       {
-        date: "Dec 2023 -Aug 2024",
+        date: "Dec 2023 -2024",
         role: "Gyzer tech",
         heading: "Frontend Developer",
         text: "Was involved in developing an intuitive interface that enhanced user engagement and understanding through a clear and user-friendly design.",
