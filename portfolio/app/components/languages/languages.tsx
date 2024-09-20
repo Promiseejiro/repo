@@ -12,17 +12,21 @@ const Languages=()=>{
                <SubHeader label={`Languages`}></SubHeader>
           <div className={classes.card}>
             <div className={classes.item1}>
-              <span>2 Yrs</span>
+              <span>3 Yrs</span>
               <h4>JavaScript</h4>
             </div>
             <div className={classes.item2}>
-              <span>1 Yrs</span>
-              <h4>PHP</h4>
+              <span>2 Yrs</span>
+              <h4>Typscript</h4>
             </div>
             <div className={classes.item3}>
               <span>2 Yrs</span>
-              <h4>HTML/CSS</h4>
+              <h4>PHP</h4>
             </div>
+            {/* <div className={classes.item3}>
+              <span>3+ Yrs</span>
+              <h4>HTML/CSS</h4>
+            </div> */}
           </div>
         </div>
      )

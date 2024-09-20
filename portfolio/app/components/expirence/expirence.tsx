@@ -10,13 +10,25 @@ const Expirence =()=>{
   
      const experiences = [
       {
-        date: "May 2022 - Present",
+        date: "Dec 2023 -Aug 2024",
+        role: "Gyzer tech",
+        heading: "Frontend Developer",
+        text: "Was involved in developing an intuitive interface that enhanced user engagement and understanding through a clear and user-friendly design.",
+      },
+      {
+        date: "July 2024 -Aug 2024",
+        role: "HNG Internship",
+        heading: "Frontend Developer",
+        text: "Collaborated with a group of developer, Designer, Project managers, Data analyst in developing various software applications development with rigorous training sessions.",
+      },
+      {
+        date: "May 2022 - 2023",
         role: "Personal Project",
         heading: "Lead developer easyCBT",
         text: "A  CBT tool use to create, solve, download answers.For exam preparation, Boost confidence, ace your exams. 📚✅ #Success",
       },
       {
-        date: "May 2022 - Present",
+        date: "May 2022 - 2023",
         role: "Personal Project",
         heading: "RERHA Publicity tool",
         text: "RerhaDp helps Streamline customer interactions, enhance relationships. Your ultimate CRM solution for growth and satisfaction. Elevate engagement effortlessly."

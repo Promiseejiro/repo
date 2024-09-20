@@ -13,6 +13,12 @@ const Projects = () => {
 
   const projects = [
     {
+      url: "https://remote.bingo/",
+      repo: "",
+      image: "https://res.cloudinary.com/dxqg5hify/image/upload/v1726835657/Bingo_-_Google_Chrome_2024-09-20_13.33.33_rljo2v.png",
+      name: "Remote Bingo",
+    },
+    {
       url: "https://rerhadp.vercel.app/",
       repo: "https://github.com/Promiseejiro/Reach",
       image: rerha,
@@ -29,12 +35,6 @@ const Projects = () => {
       repo: "https://github.com/Promiseejiro/sneaker-Ecomance-project",
       image: ecomance,
       name: "Sneaker Ecomance",
-    },
-    {
-      url: "https://comment-section-rho.vercel.app/",
-      repo: "https://github.com/Promiseejiro/comment-section",
-      image: comment,
-      name: "Comment section",
     },
   ];
   return (

@@ -20,6 +20,7 @@ import classes from "./page.module.css";
 
 import { Poppins } from "next/font/google";
 import Connect from "./components/leftcomponent/connect";
+import Certification from "./components/Certification";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -63,6 +64,8 @@ function Home() {
         <Service></Service>
 
         <Expirence></Expirence>
+        
+        <Certification></Certification>
 
         <Education></Education>
 

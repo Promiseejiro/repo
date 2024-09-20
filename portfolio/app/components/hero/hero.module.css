@@ -40,7 +40,7 @@
   height: 90%;
   top: 5rem;
   left: 0;
-  background-color: var(--white-color);
+  background-color: var(--dark-color);
   /* animation: moveRight 4s linear infinite; */
   animation-delay: -1s;
   z-index: 2;
@@ -86,7 +86,7 @@
   padding: 1rem;
   position: relative;
   z-index: 3;
-  background-color: rgba(255, 255, 255, 0.6);
+  /* background-color: rgba(255, 255, 255, 0.6); */
 }
 
 .white_theme .border_container {
@@ -132,7 +132,7 @@
 .hero_overlay p,
 .hero_overlay h1,
 .hero_overlay h4 {
-  color: var(--dark-color);
+  color: var(--white-color);
   /* padding: 1rem; */
 }
 

@@ -1,0 +1,113 @@
+.services_section {
+  margin: 1rem;
+}
+
+.services_section .card {
+  border: 0.1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: 3rem 0;
+  width: 100%;
+}
+
+.services_section .icons {
+  color: var(--blue-color);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.white_theme .icons {
+  color: var(--success-color);
+}
+
+.brown_theme .icons {
+  color: var(--brown-color);
+}
+
+.services_section h4 {
+  font-size: 20px;
+  color: var(--white-color);
+  margin: 1rem;
+  font-weight: 500;
+}
+
+.white_theme h4 {
+  color: var(--dark-color);
+}
+
+.brown_theme h4 {
+  color: var(--dark-color);
+}
+
+.services_section p {
+  text-align: center;
+  color: var(--gray-color);
+}
+
+.white_theme p {
+  color: var(--dark-color);
+}
+
+.brown_theme p {
+  color: var(--dark-color);
+}
+
+.certificationHeading {
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0.2rem 0;
+}
+
+.project_btn {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-color);
+  text-align: center;
+  border-bottom: 0.5px solid var(--border-color);
+  text-decoration: none;
+  margin-top: 0.4rem;
+}
+
+.project_btn:hover {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  padding: 0;
+}
+@media (min-width: 700px) {
+  .services_section {
+    padding: 0;
+    margin: auto;
+    max-width: 800px;
+  }
+
+  .contact_main_container {
+    display: grid;
+    grid-template-columns: repeat(2 fr);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .full_width {
+    grid-column: 1 / span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .services_section .card {
+    padding: 1rem;
+    margin: 3rem 0;
+    justify-content: space-between;
+    min-width: 300px;
+    max-width: 300px;
+  }
+}

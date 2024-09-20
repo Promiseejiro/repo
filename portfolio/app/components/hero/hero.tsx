@@ -98,9 +98,12 @@ const Hero = () => {
 
           <div className={classes.content} id="resume">
             <p className={classes.discription}>
-              {` I'm Emosivbe promise. A tech savant with mastery of contemporary
-              tools and technologies, fashioning software solutions that
-              prioritize seamless user experiences and improve lives.`}
+              {` I'm Emosivbe promise.I'm a Software developer with 3years of experience building tech solution with mastery of contemporary tools and
+technologies fashioning software solutions that prioritize seamless user experiences and improve lives with attention
+to details and results-driven with a relentless drive to learn new technologies needed for the job. I excel in effective
+communication and collaboration with team members transforming idea into reality. My passion for innovation and
+strong work ethic ensure projects are not only completed but exceed expectations. 
+`}
             </p>
             <div className={classes.ul_container}>
               <ul className={classes.first_ul}>
