@@ -124,7 +124,7 @@ strong work ethic ensure projects are not only completed but exceed expectations
             </div>
             <div className={classes.btn_container}>
               <a
-                href="https://drive.google.com/file/d/1N0G6Bin1h4TdLa5-xqtsc1Auv2pzVG9b/view?usp=sharing"
+                href="https://drive.google.com/file/d/1KlYAcBvBER7CoMtOxNtAMskZmzGrYuRB/view?usp=sharing"
                 download
               >
                 Download CV
