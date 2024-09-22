@@ -154,7 +154,7 @@
 }
 
 .line {
-  border: 0.1px solid var(--success-color);
+  border: 0.1px solid var(--blue-color);
   /* height: 0.1px; */
   background-color: gray;
   width: 100%;
@@ -263,9 +263,9 @@
 .details .discription {
   margin: 1rem 1rem;
   color: var(--gray-color);
-  font-weight: 500;
-  font-size: 16px;
-  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: justify;
 }
 
 .white_theme .details .discription {

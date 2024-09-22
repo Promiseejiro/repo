@@ -1,5 +1,5 @@
 .expirence_section {
-     margin: 2rem 1rem;
+     margin:  1rem;
    }
    
    .experience_main_container {
@@ -7,7 +7,7 @@
    }
    
    .expirence_section .card {
-     margin: 3rem 0;
+     margin: 1rem 0;
      border: 0.1px solid var(--border-color);
      padding: 2rem 1rem;
    }
